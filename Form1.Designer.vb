@@ -144,8 +144,8 @@ Partial Class Form1
         Me.Controls.Add(Me.ImgPresentacion)
         Me.Controls.Add(Me.LabelTitulo)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PANAMA CAR RENTAL"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ImgPresentacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GrupoSeleccion.ResumeLayout(False)
         Me.ResumeLayout(False)

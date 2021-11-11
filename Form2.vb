@@ -1,33 +1,18 @@
 ﻿Public Class Form2
-    Private Sub lblprecio_Click(sender As Object, e As EventArgs)
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub rbtSedan_CheckedChanged(sender As Object, e As EventArgs) Handles radioFamiliar.CheckedChanged
-        Form3.Show()
-
-
+    Private Sub BotonCancelar_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
+        Dispose()
     End Sub
 
-    Private Sub btnCancelar_Click(sender As Object, e As EventArgs)
-        Me.Close()
-
-    End Sub
-
-    Private Sub rbtLujo_CheckedChanged(sender As Object, e As EventArgs) Handles radioLujo.CheckedChanged
-        radioLujo.Checked = True
-
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles imgFamiliar.Click
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles grupoOpciones.Enter
-
-    End Sub
-
-    Private Sub btnavanzar_Click(sender As Object, e As EventArgs) Handles botonCancelar.Click
-
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
+        If RadioFamiliar.Checked Then
+            Form3.Show()
+        End If
+        If RadioLujo.Checked Then
+            Form4.Show()
+        End If
     End Sub
 End Class

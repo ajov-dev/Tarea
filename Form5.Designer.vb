@@ -22,77 +22,77 @@ Partial Class Form5
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.grupoDetallesConductor = New System.Windows.Forms.GroupBox()
+        Me.GrupoDetallesConductor = New System.Windows.Forms.GroupBox()
         Me.textNombre = New System.Windows.Forms.TextBox()
         Me.textEdad = New System.Windows.Forms.TextBox()
-        Me.labelNacionalidad = New System.Windows.Forms.Label()
-        Me.labelCedula = New System.Windows.Forms.Label()
+        Me.LabelNacionalidad = New System.Windows.Forms.Label()
+        Me.LabelCedula = New System.Windows.Forms.Label()
         Me.textCedula = New System.Windows.Forms.TextBox()
         Me.textDireccion = New System.Windows.Forms.TextBox()
-        Me.labelDireccion = New System.Windows.Forms.Label()
-        Me.labelEdad = New System.Windows.Forms.Label()
-        Me.labelLicencia = New System.Windows.Forms.Label()
+        Me.LabelDireccion = New System.Windows.Forms.Label()
+        Me.LabelEdad = New System.Windows.Forms.Label()
+        Me.LabelLicencia = New System.Windows.Forms.Label()
         Me.textApellido = New System.Windows.Forms.TextBox()
-        Me.labelApellido = New System.Windows.Forms.Label()
+        Me.LabelApellido = New System.Windows.Forms.Label()
         Me.textNacionalidad = New System.Windows.Forms.TextBox()
         Me.textLicencia = New System.Windows.Forms.TextBox()
-        Me.labelNombre = New System.Windows.Forms.Label()
+        Me.LabelNombre = New System.Windows.Forms.Label()
         Me.grupoDatosReserva = New System.Windows.Forms.GroupBox()
         Me.grupoDatosReservaTarifa = New System.Windows.Forms.GroupBox()
         Me.comboMetodoPago = New System.Windows.Forms.ComboBox()
         Me.textoTiempoRentar = New System.Windows.Forms.TextBox()
-        Me.labelMetodoPago = New System.Windows.Forms.Label()
-        Me.grupoTarifaElegida = New System.Windows.Forms.GroupBox()
+        Me.LabelMetodoPago = New System.Windows.Forms.Label()
+        Me.GrupoTarifaElegida = New System.Windows.Forms.GroupBox()
         Me.radioTarifaElegidaDias = New System.Windows.Forms.RadioButton()
         Me.radioTarifaElegidaSemanas = New System.Windows.Forms.RadioButton()
         Me.radioTarifaElegidaMeses = New System.Windows.Forms.RadioButton()
         Me.radioTarifaElegidaHoras = New System.Windows.Forms.RadioButton()
-        Me.labelTiempoRentar = New System.Windows.Forms.Label()
+        Me.LabelTiempoRentar = New System.Windows.Forms.Label()
         Me.comboFechaRetiroAño = New System.Windows.Forms.ComboBox()
         Me.comboFechaRetiroMes = New System.Windows.Forms.ComboBox()
         Me.comboFechaRetiroDia = New System.Windows.Forms.ComboBox()
-        Me.labelFechaRetiro = New System.Windows.Forms.Label()
-        Me.grupoTipoAuto = New System.Windows.Forms.GroupBox()
+        Me.LabelFechaRetiro = New System.Windows.Forms.Label()
+        Me.GrupoTipoAuto = New System.Windows.Forms.GroupBox()
         Me.radioTipoVehiculoLujo = New System.Windows.Forms.RadioButton()
         Me.radioTipoVehiculoFamiliar = New System.Windows.Forms.RadioButton()
         Me.comboSucursales = New System.Windows.Forms.ComboBox()
-        Me.labelModeloVehiculo = New System.Windows.Forms.Label()
+        Me.LabelModeloVehiculo = New System.Windows.Forms.Label()
         Me.comboModeloOpciones = New System.Windows.Forms.ComboBox()
-        Me.labelLugarRetiro = New System.Windows.Forms.Label()
-        Me.botonReservar = New System.Windows.Forms.Button()
+        Me.LabelLugarRetiro = New System.Windows.Forms.Label()
+        Me.BotonReservar = New System.Windows.Forms.Button()
         Me.botonContinuar = New System.Windows.Forms.Button()
         Me.botonCancelar = New System.Windows.Forms.Button()
-        Me.grupoDetallesConductor.SuspendLayout()
+        Me.GrupoDetallesConductor.SuspendLayout()
         Me.grupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
-        Me.grupoTarifaElegida.SuspendLayout()
-        Me.grupoTipoAuto.SuspendLayout()
+        Me.GrupoTarifaElegida.SuspendLayout()
+        Me.GrupoTipoAuto.SuspendLayout()
         Me.SuspendLayout()
         '
-        'grupoDetallesConductor
+        'GrupoDetallesConductor
         '
-        Me.grupoDetallesConductor.BackColor = System.Drawing.Color.White
-        Me.grupoDetallesConductor.Controls.Add(Me.textNombre)
-        Me.grupoDetallesConductor.Controls.Add(Me.textEdad)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelNacionalidad)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelCedula)
-        Me.grupoDetallesConductor.Controls.Add(Me.textCedula)
-        Me.grupoDetallesConductor.Controls.Add(Me.textDireccion)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelDireccion)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelEdad)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelLicencia)
-        Me.grupoDetallesConductor.Controls.Add(Me.textApellido)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelApellido)
-        Me.grupoDetallesConductor.Controls.Add(Me.textNacionalidad)
-        Me.grupoDetallesConductor.Controls.Add(Me.textLicencia)
-        Me.grupoDetallesConductor.Controls.Add(Me.labelNombre)
-        Me.grupoDetallesConductor.Font = New System.Drawing.Font("Candara", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grupoDetallesConductor.Location = New System.Drawing.Point(12, 12)
-        Me.grupoDetallesConductor.Name = "grupoDetallesConductor"
-        Me.grupoDetallesConductor.Size = New System.Drawing.Size(860, 161)
-        Me.grupoDetallesConductor.TabIndex = 0
-        Me.grupoDetallesConductor.TabStop = False
-        Me.grupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
+        Me.GrupoDetallesConductor.BackColor = System.Drawing.Color.White
+        Me.GrupoDetallesConductor.Controls.Add(Me.textNombre)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textEdad)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelNacionalidad)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelCedula)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textCedula)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textDireccion)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelDireccion)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelEdad)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelLicencia)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textApellido)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelApellido)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textNacionalidad)
+        Me.GrupoDetallesConductor.Controls.Add(Me.textLicencia)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelNombre)
+        Me.GrupoDetallesConductor.Font = New System.Drawing.Font("Candara", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoDetallesConductor.Location = New System.Drawing.Point(12, 12)
+        Me.GrupoDetallesConductor.Name = "GrupoDetallesConductor"
+        Me.GrupoDetallesConductor.Size = New System.Drawing.Size(860, 161)
+        Me.GrupoDetallesConductor.TabIndex = 0
+        Me.GrupoDetallesConductor.TabStop = False
+        Me.GrupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
         '
         'textNombre
         '
@@ -112,23 +112,23 @@ Partial Class Form5
         Me.textEdad.Size = New System.Drawing.Size(149, 31)
         Me.textEdad.TabIndex = 30
         '
-        'labelNacionalidad
+        'LabelNacionalidad
         '
-        Me.labelNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelNacionalidad.Location = New System.Drawing.Point(6, 80)
-        Me.labelNacionalidad.Name = "labelNacionalidad"
-        Me.labelNacionalidad.Size = New System.Drawing.Size(142, 25)
-        Me.labelNacionalidad.TabIndex = 29
-        Me.labelNacionalidad.Text = "NACIONALIDAD"
+        Me.LabelNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNacionalidad.Location = New System.Drawing.Point(6, 80)
+        Me.LabelNacionalidad.Name = "LabelNacionalidad"
+        Me.LabelNacionalidad.Size = New System.Drawing.Size(142, 25)
+        Me.LabelNacionalidad.TabIndex = 29
+        Me.LabelNacionalidad.Text = "NACIONALIDAD"
         '
-        'labelCedula
+        'LabelCedula
         '
-        Me.labelCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelCedula.Location = New System.Drawing.Point(601, 40)
-        Me.labelCedula.Name = "labelCedula"
-        Me.labelCedula.Size = New System.Drawing.Size(90, 25)
-        Me.labelCedula.TabIndex = 28
-        Me.labelCedula.Text = "CÉDULA#"
+        Me.LabelCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelCedula.Location = New System.Drawing.Point(601, 40)
+        Me.LabelCedula.Name = "LabelCedula"
+        Me.LabelCedula.Size = New System.Drawing.Size(90, 25)
+        Me.LabelCedula.TabIndex = 28
+        Me.LabelCedula.Text = "CÉDULA#"
         '
         'textCedula
         '
@@ -148,32 +148,32 @@ Partial Class Form5
         Me.textDireccion.Size = New System.Drawing.Size(691, 31)
         Me.textDireccion.TabIndex = 26
         '
-        'labelDireccion
+        'LabelDireccion
         '
-        Me.labelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelDireccion.Location = New System.Drawing.Point(6, 120)
-        Me.labelDireccion.Name = "labelDireccion"
-        Me.labelDireccion.Size = New System.Drawing.Size(123, 25)
-        Me.labelDireccion.TabIndex = 25
-        Me.labelDireccion.Text = "DIRECCIÓN"
+        Me.LabelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelDireccion.Location = New System.Drawing.Point(6, 120)
+        Me.LabelDireccion.Name = "LabelDireccion"
+        Me.LabelDireccion.Size = New System.Drawing.Size(123, 25)
+        Me.LabelDireccion.TabIndex = 25
+        Me.LabelDireccion.Text = "DIRECCIÓN"
         '
-        'labelEdad
+        'LabelEdad
         '
-        Me.labelEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelEdad.Location = New System.Drawing.Point(603, 80)
-        Me.labelEdad.Name = "labelEdad"
-        Me.labelEdad.Size = New System.Drawing.Size(68, 25)
-        Me.labelEdad.TabIndex = 20
-        Me.labelEdad.Text = "EDAD"
+        Me.LabelEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelEdad.Location = New System.Drawing.Point(603, 80)
+        Me.LabelEdad.Name = "LabelEdad"
+        Me.LabelEdad.Size = New System.Drawing.Size(68, 25)
+        Me.LabelEdad.TabIndex = 20
+        Me.LabelEdad.Text = "EDAD"
         '
-        'labelLicencia
+        'LabelLicencia
         '
-        Me.labelLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelLicencia.Location = New System.Drawing.Point(339, 80)
-        Me.labelLicencia.Name = "labelLicencia"
-        Me.labelLicencia.Size = New System.Drawing.Size(108, 25)
-        Me.labelLicencia.TabIndex = 24
-        Me.labelLicencia.Text = "LICENCIA#"
+        Me.LabelLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelLicencia.Location = New System.Drawing.Point(339, 80)
+        Me.LabelLicencia.Name = "LabelLicencia"
+        Me.LabelLicencia.Size = New System.Drawing.Size(108, 25)
+        Me.LabelLicencia.TabIndex = 24
+        Me.LabelLicencia.Text = "LICENCIA#"
         '
         'textApellido
         '
@@ -184,14 +184,14 @@ Partial Class Form5
         Me.textApellido.Size = New System.Drawing.Size(129, 31)
         Me.textApellido.TabIndex = 23
         '
-        'labelApellido
+        'LabelApellido
         '
-        Me.labelApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelApellido.Location = New System.Drawing.Point(339, 40)
-        Me.labelApellido.Name = "labelApellido"
-        Me.labelApellido.Size = New System.Drawing.Size(100, 25)
-        Me.labelApellido.TabIndex = 22
-        Me.labelApellido.Text = "APELLIDO"
+        Me.LabelApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApellido.Location = New System.Drawing.Point(339, 40)
+        Me.LabelApellido.Name = "LabelApellido"
+        Me.LabelApellido.Size = New System.Drawing.Size(100, 25)
+        Me.LabelApellido.TabIndex = 22
+        Me.LabelApellido.Text = "APELLIDO"
         '
         'textNacionalidad
         '
@@ -211,24 +211,24 @@ Partial Class Form5
         Me.textLicencia.Size = New System.Drawing.Size(121, 31)
         Me.textLicencia.TabIndex = 13
         '
-        'labelNombre
+        'LabelNombre
         '
-        Me.labelNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelNombre.Location = New System.Drawing.Point(6, 40)
-        Me.labelNombre.Name = "labelNombre"
-        Me.labelNombre.Size = New System.Drawing.Size(100, 25)
-        Me.labelNombre.TabIndex = 0
-        Me.labelNombre.Text = "NOMBRE"
+        Me.LabelNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNombre.Location = New System.Drawing.Point(6, 40)
+        Me.LabelNombre.Name = "LabelNombre"
+        Me.LabelNombre.Size = New System.Drawing.Size(100, 25)
+        Me.LabelNombre.TabIndex = 0
+        Me.LabelNombre.Text = "NOMBRE"
         '
         'grupoDatosReserva
         '
         Me.grupoDatosReserva.BackColor = System.Drawing.Color.White
         Me.grupoDatosReserva.Controls.Add(Me.grupoDatosReservaTarifa)
-        Me.grupoDatosReserva.Controls.Add(Me.grupoTipoAuto)
+        Me.grupoDatosReserva.Controls.Add(Me.GrupoTipoAuto)
         Me.grupoDatosReserva.Controls.Add(Me.comboSucursales)
-        Me.grupoDatosReserva.Controls.Add(Me.labelModeloVehiculo)
+        Me.grupoDatosReserva.Controls.Add(Me.LabelModeloVehiculo)
         Me.grupoDatosReserva.Controls.Add(Me.comboModeloOpciones)
-        Me.grupoDatosReserva.Controls.Add(Me.labelLugarRetiro)
+        Me.grupoDatosReserva.Controls.Add(Me.LabelLugarRetiro)
         Me.grupoDatosReserva.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grupoDatosReserva.Location = New System.Drawing.Point(12, 179)
         Me.grupoDatosReserva.Name = "grupoDatosReserva"
@@ -242,13 +242,13 @@ Partial Class Form5
         Me.grupoDatosReservaTarifa.BackColor = System.Drawing.Color.Transparent
         Me.grupoDatosReservaTarifa.Controls.Add(Me.comboMetodoPago)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.textoTiempoRentar)
-        Me.grupoDatosReservaTarifa.Controls.Add(Me.labelMetodoPago)
-        Me.grupoDatosReservaTarifa.Controls.Add(Me.grupoTarifaElegida)
-        Me.grupoDatosReservaTarifa.Controls.Add(Me.labelTiempoRentar)
+        Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelMetodoPago)
+        Me.grupoDatosReservaTarifa.Controls.Add(Me.GrupoTarifaElegida)
+        Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelTiempoRentar)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.comboFechaRetiroAño)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.comboFechaRetiroMes)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.comboFechaRetiroDia)
-        Me.grupoDatosReservaTarifa.Controls.Add(Me.labelFechaRetiro)
+        Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelFechaRetiro)
         Me.grupoDatosReservaTarifa.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
         Me.grupoDatosReservaTarifa.Location = New System.Drawing.Point(358, 0)
         Me.grupoDatosReservaTarifa.Name = "grupoDatosReservaTarifa"
@@ -276,30 +276,30 @@ Partial Class Form5
         Me.textoTiempoRentar.Size = New System.Drawing.Size(175, 31)
         Me.textoTiempoRentar.TabIndex = 25
         '
-        'labelMetodoPago
+        'LabelMetodoPago
         '
-        Me.labelMetodoPago.AutoSize = True
-        Me.labelMetodoPago.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelMetodoPago.Location = New System.Drawing.Point(6, 207)
-        Me.labelMetodoPago.Name = "labelMetodoPago"
-        Me.labelMetodoPago.Size = New System.Drawing.Size(162, 23)
-        Me.labelMetodoPago.TabIndex = 21
-        Me.labelMetodoPago.Text = "METODO DE PAGO"
+        Me.LabelMetodoPago.AutoSize = True
+        Me.LabelMetodoPago.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelMetodoPago.Location = New System.Drawing.Point(6, 207)
+        Me.LabelMetodoPago.Name = "LabelMetodoPago"
+        Me.LabelMetodoPago.Size = New System.Drawing.Size(162, 23)
+        Me.LabelMetodoPago.TabIndex = 21
+        Me.LabelMetodoPago.Text = "METODO DE PAGO"
         '
-        'grupoTarifaElegida
+        'GrupoTarifaElegida
         '
-        Me.grupoTarifaElegida.BackColor = System.Drawing.Color.Silver
-        Me.grupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaDias)
-        Me.grupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaSemanas)
-        Me.grupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaMeses)
-        Me.grupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaHoras)
-        Me.grupoTarifaElegida.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grupoTarifaElegida.Location = New System.Drawing.Point(6, 30)
-        Me.grupoTarifaElegida.Name = "grupoTarifaElegida"
-        Me.grupoTarifaElegida.Size = New System.Drawing.Size(462, 86)
-        Me.grupoTarifaElegida.TabIndex = 1
-        Me.grupoTarifaElegida.TabStop = False
-        Me.grupoTarifaElegida.Text = "TARIFA ELEGIDA"
+        Me.GrupoTarifaElegida.BackColor = System.Drawing.Color.Silver
+        Me.GrupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaDias)
+        Me.GrupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaSemanas)
+        Me.GrupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaMeses)
+        Me.GrupoTarifaElegida.Controls.Add(Me.radioTarifaElegidaHoras)
+        Me.GrupoTarifaElegida.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoTarifaElegida.Location = New System.Drawing.Point(6, 30)
+        Me.GrupoTarifaElegida.Name = "GrupoTarifaElegida"
+        Me.GrupoTarifaElegida.Size = New System.Drawing.Size(462, 86)
+        Me.GrupoTarifaElegida.TabIndex = 1
+        Me.GrupoTarifaElegida.TabStop = False
+        Me.GrupoTarifaElegida.Text = "TARIFA ELEGIDA"
         '
         'radioTarifaElegidaDias
         '
@@ -345,15 +345,15 @@ Partial Class Form5
         Me.radioTarifaElegidaHoras.Text = "HORAS"
         Me.radioTarifaElegidaHoras.UseVisualStyleBackColor = True
         '
-        'labelTiempoRentar
+        'LabelTiempoRentar
         '
-        Me.labelTiempoRentar.AutoSize = True
-        Me.labelTiempoRentar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelTiempoRentar.Location = New System.Drawing.Point(2, 157)
-        Me.labelTiempoRentar.Name = "labelTiempoRentar"
-        Me.labelTiempoRentar.Size = New System.Drawing.Size(162, 23)
-        Me.labelTiempoRentar.TabIndex = 24
-        Me.labelTiempoRentar.Text = "TIEMPO A RENTAR"
+        Me.LabelTiempoRentar.AutoSize = True
+        Me.LabelTiempoRentar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTiempoRentar.Location = New System.Drawing.Point(2, 157)
+        Me.LabelTiempoRentar.Name = "LabelTiempoRentar"
+        Me.LabelTiempoRentar.Size = New System.Drawing.Size(162, 23)
+        Me.LabelTiempoRentar.TabIndex = 24
+        Me.LabelTiempoRentar.Text = "TIEMPO A RENTAR"
         '
         'comboFechaRetiroAño
         '
@@ -391,28 +391,28 @@ Partial Class Form5
         Me.comboFechaRetiroDia.TabIndex = 21
         Me.comboFechaRetiroDia.Text = "DIA"
         '
-        'labelFechaRetiro
+        'LabelFechaRetiro
         '
-        Me.labelFechaRetiro.AutoSize = True
-        Me.labelFechaRetiro.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelFechaRetiro.Location = New System.Drawing.Point(2, 119)
-        Me.labelFechaRetiro.Name = "labelFechaRetiro"
-        Me.labelFechaRetiro.Size = New System.Drawing.Size(163, 23)
-        Me.labelFechaRetiro.TabIndex = 20
-        Me.labelFechaRetiro.Text = "FECHA DEL RETIRO"
+        Me.LabelFechaRetiro.AutoSize = True
+        Me.LabelFechaRetiro.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFechaRetiro.Location = New System.Drawing.Point(2, 119)
+        Me.LabelFechaRetiro.Name = "LabelFechaRetiro"
+        Me.LabelFechaRetiro.Size = New System.Drawing.Size(163, 23)
+        Me.LabelFechaRetiro.TabIndex = 20
+        Me.LabelFechaRetiro.Text = "FECHA DEL RETIRO"
         '
-        'grupoTipoAuto
+        'GrupoTipoAuto
         '
-        Me.grupoTipoAuto.BackColor = System.Drawing.Color.Silver
-        Me.grupoTipoAuto.Controls.Add(Me.radioTipoVehiculoLujo)
-        Me.grupoTipoAuto.Controls.Add(Me.radioTipoVehiculoFamiliar)
-        Me.grupoTipoAuto.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grupoTipoAuto.Location = New System.Drawing.Point(16, 30)
-        Me.grupoTipoAuto.Name = "grupoTipoAuto"
-        Me.grupoTipoAuto.Size = New System.Drawing.Size(336, 86)
-        Me.grupoTipoAuto.TabIndex = 0
-        Me.grupoTipoAuto.TabStop = False
-        Me.grupoTipoAuto.Text = "TIPO DE VEHICULO"
+        Me.GrupoTipoAuto.BackColor = System.Drawing.Color.Silver
+        Me.GrupoTipoAuto.Controls.Add(Me.radioTipoVehiculoLujo)
+        Me.GrupoTipoAuto.Controls.Add(Me.radioTipoVehiculoFamiliar)
+        Me.GrupoTipoAuto.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoTipoAuto.Location = New System.Drawing.Point(16, 30)
+        Me.GrupoTipoAuto.Name = "GrupoTipoAuto"
+        Me.GrupoTipoAuto.Size = New System.Drawing.Size(336, 86)
+        Me.GrupoTipoAuto.TabIndex = 0
+        Me.GrupoTipoAuto.TabStop = False
+        Me.GrupoTipoAuto.Text = "TIPO DE VEHICULO"
         '
         'radioTipoVehiculoLujo
         '
@@ -447,15 +447,15 @@ Partial Class Form5
         Me.comboSucursales.TabIndex = 19
         Me.comboSucursales.Text = "SELECCIONE UNA SUCURSAL"
         '
-        'labelModeloVehiculo
+        'LabelModeloVehiculo
         '
-        Me.labelModeloVehiculo.AutoSize = True
-        Me.labelModeloVehiculo.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelModeloVehiculo.Location = New System.Drawing.Point(18, 119)
-        Me.labelModeloVehiculo.Name = "labelModeloVehiculo"
-        Me.labelModeloVehiculo.Size = New System.Drawing.Size(206, 23)
-        Me.labelModeloVehiculo.TabIndex = 18
-        Me.labelModeloVehiculo.Text = "MODELO DEL VEHICULO"
+        Me.LabelModeloVehiculo.AutoSize = True
+        Me.LabelModeloVehiculo.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelModeloVehiculo.Location = New System.Drawing.Point(18, 119)
+        Me.LabelModeloVehiculo.Name = "LabelModeloVehiculo"
+        Me.LabelModeloVehiculo.Size = New System.Drawing.Size(206, 23)
+        Me.LabelModeloVehiculo.TabIndex = 18
+        Me.LabelModeloVehiculo.Text = "MODELO DEL VEHICULO"
         '
         'comboModeloOpciones
         '
@@ -468,26 +468,26 @@ Partial Class Form5
         Me.comboModeloOpciones.TabIndex = 19
         Me.comboModeloOpciones.Text = "SELECCIONE EL MODELO"
         '
-        'labelLugarRetiro
+        'LabelLugarRetiro
         '
-        Me.labelLugarRetiro.AutoSize = True
-        Me.labelLugarRetiro.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelLugarRetiro.Location = New System.Drawing.Point(18, 207)
-        Me.labelLugarRetiro.Name = "labelLugarRetiro"
-        Me.labelLugarRetiro.Size = New System.Drawing.Size(268, 23)
-        Me.labelLugarRetiro.TabIndex = 18
-        Me.labelLugarRetiro.Text = "LUGAR A RETIRAR EL VEHICULO"
+        Me.LabelLugarRetiro.AutoSize = True
+        Me.LabelLugarRetiro.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelLugarRetiro.Location = New System.Drawing.Point(18, 207)
+        Me.LabelLugarRetiro.Name = "LabelLugarRetiro"
+        Me.LabelLugarRetiro.Size = New System.Drawing.Size(268, 23)
+        Me.LabelLugarRetiro.TabIndex = 18
+        Me.LabelLugarRetiro.Text = "LUGAR A RETIRAR EL VEHICULO"
         '
-        'botonReservar
+        'BotonReservar
         '
-        Me.botonReservar.BackColor = System.Drawing.Color.White
-        Me.botonReservar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botonReservar.Location = New System.Drawing.Point(12, 479)
-        Me.botonReservar.Name = "botonReservar"
-        Me.botonReservar.Size = New System.Drawing.Size(243, 71)
-        Me.botonReservar.TabIndex = 2
-        Me.botonReservar.Text = "RESERVAR"
-        Me.botonReservar.UseVisualStyleBackColor = False
+        Me.BotonReservar.BackColor = System.Drawing.Color.White
+        Me.BotonReservar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.BotonReservar.Location = New System.Drawing.Point(12, 479)
+        Me.BotonReservar.Name = "BotonReservar"
+        Me.BotonReservar.Size = New System.Drawing.Size(243, 71)
+        Me.BotonReservar.TabIndex = 2
+        Me.BotonReservar.Text = "RESERVAR"
+        Me.BotonReservar.UseVisualStyleBackColor = False
         '
         'botonContinuar
         '
@@ -519,63 +519,64 @@ Partial Class Form5
         Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.botonCancelar)
         Me.Controls.Add(Me.botonContinuar)
-        Me.Controls.Add(Me.botonReservar)
+        Me.Controls.Add(Me.BotonReservar)
         Me.Controls.Add(Me.grupoDatosReserva)
-        Me.Controls.Add(Me.grupoDetallesConductor)
+        Me.Controls.Add(Me.GrupoDetallesConductor)
         Me.Name = "Form5"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RESERVACION"
-        Me.grupoDetallesConductor.ResumeLayout(False)
-        Me.grupoDetallesConductor.PerformLayout()
+        Me.GrupoDetallesConductor.ResumeLayout(False)
+        Me.GrupoDetallesConductor.PerformLayout()
         Me.grupoDatosReserva.ResumeLayout(False)
         Me.grupoDatosReserva.PerformLayout()
         Me.grupoDatosReservaTarifa.ResumeLayout(False)
         Me.grupoDatosReservaTarifa.PerformLayout()
-        Me.grupoTarifaElegida.ResumeLayout(False)
-        Me.grupoTarifaElegida.PerformLayout()
-        Me.grupoTipoAuto.ResumeLayout(False)
-        Me.grupoTipoAuto.PerformLayout()
+        Me.GrupoTarifaElegida.ResumeLayout(False)
+        Me.GrupoTarifaElegida.PerformLayout()
+        Me.GrupoTipoAuto.ResumeLayout(False)
+        Me.GrupoTipoAuto.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents grupoDetallesConductor As GroupBox
+    Friend WithEvents GrupoDetallesConductor As GroupBox
     Friend WithEvents textLicencia As TextBox
-    Friend WithEvents labelNombre As Label
+    Friend WithEvents LabelNombre As Label
     Friend WithEvents grupoDatosReserva As GroupBox
     Friend WithEvents comboSucursales As ComboBox
-    Friend WithEvents labelLugarRetiro As Label
-    Friend WithEvents grupoTarifaElegida As GroupBox
-    Friend WithEvents grupoTipoAuto As GroupBox
+    Friend WithEvents LabelLugarRetiro As Label
+    Friend WithEvents GrupoTarifaElegida As GroupBox
+    Friend WithEvents GrupoTipoAuto As GroupBox
     Friend WithEvents radioTipoVehiculoLujo As RadioButton
     Friend WithEvents radioTipoVehiculoFamiliar As RadioButton
     Friend WithEvents radioTarifaElegidaDias As RadioButton
     Friend WithEvents radioTarifaElegidaSemanas As RadioButton
     Friend WithEvents radioTarifaElegidaMeses As RadioButton
     Friend WithEvents radioTarifaElegidaHoras As RadioButton
-    Friend WithEvents botonReservar As Button
+    Friend WithEvents BotonReservar As Button
     Friend WithEvents botonContinuar As Button
     Friend WithEvents botonCancelar As Button
     Friend WithEvents textApellido As TextBox
-    Friend WithEvents labelApellido As Label
+    Friend WithEvents LabelApellido As Label
     Friend WithEvents textNacionalidad As TextBox
-    Friend WithEvents labelEdad As Label
+    Friend WithEvents LabelEdad As Label
     Friend WithEvents textEdad As TextBox
-    Friend WithEvents labelNacionalidad As Label
-    Friend WithEvents labelCedula As Label
+    Friend WithEvents LabelNacionalidad As Label
+    Friend WithEvents LabelCedula As Label
     Friend WithEvents textCedula As TextBox
     Friend WithEvents textDireccion As TextBox
-    Friend WithEvents labelDireccion As Label
-    Friend WithEvents labelLicencia As Label
+    Friend WithEvents LabelDireccion As Label
+    Friend WithEvents LabelLicencia As Label
     Friend WithEvents grupoDatosReservaTarifa As GroupBox
     Friend WithEvents textoTiempoRentar As TextBox
-    Friend WithEvents labelTiempoRentar As Label
+    Friend WithEvents LabelTiempoRentar As Label
     Friend WithEvents comboFechaRetiroAño As ComboBox
     Friend WithEvents comboFechaRetiroMes As ComboBox
     Friend WithEvents comboFechaRetiroDia As ComboBox
-    Friend WithEvents labelFechaRetiro As Label
+    Friend WithEvents LabelFechaRetiro As Label
     Friend WithEvents comboModeloOpciones As ComboBox
-    Friend WithEvents labelModeloVehiculo As Label
+    Friend WithEvents LabelModeloVehiculo As Label
     Friend WithEvents textNombre As TextBox
     Friend WithEvents comboMetodoPago As ComboBox
-    Friend WithEvents labelMetodoPago As Label
+    Friend WithEvents LabelMetodoPago As Label
 End Class

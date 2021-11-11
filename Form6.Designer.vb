@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form7
+Partial Class Form6
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -435,7 +435,7 @@ Partial Class Form7
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "TARIFA ELEGIDA"
         '
-        'Form7
+        'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -445,7 +445,8 @@ Partial Class Form7
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.gvbReservacion)
         Me.Controls.Add(Me.gvbdatosdereserva)
-        Me.Name = "Form7"
+        Me.Name = "Form6"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PANAMA CAR RENTAL - ALQUILER"
         Me.gvbReservacion.ResumeLayout(False)
         Me.gvbReservacion.PerformLayout()
