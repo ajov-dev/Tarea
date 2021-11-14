@@ -25,22 +25,24 @@ Partial Class Form6
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnContinuar = New System.Windows.Forms.Button()
-        Me.gvbReservacion = New System.Windows.Forms.GroupBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.txtLicencia = New System.Windows.Forms.TextBox()
-        Me.lblnambre = New System.Windows.Forms.Label()
-        Me.gvbdatosdereserva = New System.Windows.Forms.GroupBox()
+        Me.GrupoReservacion = New System.Windows.Forms.GroupBox()
+        Me.LabelTelefono = New System.Windows.Forms.Label()
+        Me.TextoTelefono = New System.Windows.Forms.TextBox()
+        Me.TextoNombre = New System.Windows.Forms.TextBox()
+        Me.TextoEdad = New System.Windows.Forms.TextBox()
+        Me.LabelNacionalidad = New System.Windows.Forms.Label()
+        Me.LabelCedula = New System.Windows.Forms.Label()
+        Me.TextoCedula = New System.Windows.Forms.TextBox()
+        Me.TextoDireccion = New System.Windows.Forms.TextBox()
+        Me.LabelDireccion = New System.Windows.Forms.Label()
+        Me.LabelEdad = New System.Windows.Forms.Label()
+        Me.LabelLicencia = New System.Windows.Forms.Label()
+        Me.TextoApellido = New System.Windows.Forms.TextBox()
+        Me.LabelApellido = New System.Windows.Forms.Label()
+        Me.TextoNacionalidad = New System.Windows.Forms.TextBox()
+        Me.TextoLicencia = New System.Windows.Forms.TextBox()
+        Me.LabelNombre = New System.Windows.Forms.Label()
+        Me.GrupoDatosDelVehiculo = New System.Windows.Forms.GroupBox()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
@@ -58,8 +60,8 @@ Partial Class Form6
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.gvbReservacion.SuspendLayout()
-        Me.gvbdatosdereserva.SuspendLayout()
+        Me.GrupoReservacion.SuspendLayout()
+        Me.GrupoDatosDelVehiculo.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label12
@@ -94,218 +96,238 @@ Partial Class Form6
         Me.btnContinuar.Text = "REGRESAR"
         Me.btnContinuar.UseVisualStyleBackColor = False
         '
-        'gvbReservacion
+        'GrupoReservacion
         '
-        Me.gvbReservacion.BackColor = System.Drawing.Color.White
-        Me.gvbReservacion.Controls.Add(Me.TextBox9)
-        Me.gvbReservacion.Controls.Add(Me.TextBox6)
-        Me.gvbReservacion.Controls.Add(Me.Label7)
-        Me.gvbReservacion.Controls.Add(Me.Label6)
-        Me.gvbReservacion.Controls.Add(Me.TextBox5)
-        Me.gvbReservacion.Controls.Add(Me.TextBox4)
-        Me.gvbReservacion.Controls.Add(Me.Label5)
-        Me.gvbReservacion.Controls.Add(Me.Label2)
-        Me.gvbReservacion.Controls.Add(Me.Label4)
-        Me.gvbReservacion.Controls.Add(Me.TextBox3)
-        Me.gvbReservacion.Controls.Add(Me.Label3)
-        Me.gvbReservacion.Controls.Add(Me.TextBox2)
-        Me.gvbReservacion.Controls.Add(Me.txtLicencia)
-        Me.gvbReservacion.Controls.Add(Me.lblnambre)
-        Me.gvbReservacion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gvbReservacion.Location = New System.Drawing.Point(12, 11)
-        Me.gvbReservacion.Name = "gvbReservacion"
-        Me.gvbReservacion.Size = New System.Drawing.Size(860, 161)
-        Me.gvbReservacion.TabIndex = 5
-        Me.gvbReservacion.TabStop = False
-        Me.gvbReservacion.Text = "DETALLES DEL CONDUCTOR"
+        Me.GrupoReservacion.BackColor = System.Drawing.Color.White
+        Me.GrupoReservacion.Controls.Add(Me.LabelTelefono)
+        Me.GrupoReservacion.Controls.Add(Me.TextoTelefono)
+        Me.GrupoReservacion.Controls.Add(Me.TextoNombre)
+        Me.GrupoReservacion.Controls.Add(Me.TextoEdad)
+        Me.GrupoReservacion.Controls.Add(Me.LabelNacionalidad)
+        Me.GrupoReservacion.Controls.Add(Me.LabelCedula)
+        Me.GrupoReservacion.Controls.Add(Me.TextoCedula)
+        Me.GrupoReservacion.Controls.Add(Me.TextoDireccion)
+        Me.GrupoReservacion.Controls.Add(Me.LabelDireccion)
+        Me.GrupoReservacion.Controls.Add(Me.LabelEdad)
+        Me.GrupoReservacion.Controls.Add(Me.LabelLicencia)
+        Me.GrupoReservacion.Controls.Add(Me.TextoApellido)
+        Me.GrupoReservacion.Controls.Add(Me.LabelApellido)
+        Me.GrupoReservacion.Controls.Add(Me.TextoNacionalidad)
+        Me.GrupoReservacion.Controls.Add(Me.TextoLicencia)
+        Me.GrupoReservacion.Controls.Add(Me.LabelNombre)
+        Me.GrupoReservacion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoReservacion.Location = New System.Drawing.Point(12, 11)
+        Me.GrupoReservacion.Name = "GrupoReservacion"
+        Me.GrupoReservacion.Size = New System.Drawing.Size(860, 161)
+        Me.GrupoReservacion.TabIndex = 5
+        Me.GrupoReservacion.TabStop = False
+        Me.GrupoReservacion.Text = "DETALLES DEL CONDUCTOR"
         '
-        'TextBox9
+        'LabelTelefono
         '
-        Me.TextBox9.BackColor = System.Drawing.Color.Silver
-        Me.TextBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox9.Location = New System.Drawing.Point(106, 37)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox9.TabIndex = 33
+        Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelTelefono.Location = New System.Drawing.Point(561, 110)
+        Me.LabelTelefono.Name = "LabelTelefono"
+        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
+        Me.LabelTelefono.TabIndex = 5
+        Me.LabelTelefono.Text = "TEL."
         '
-        'TextBox6
+        'TextoTelefono
         '
-        Me.TextBox6.BackColor = System.Drawing.Color.Silver
-        Me.TextBox6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox6.Location = New System.Drawing.Point(637, 78)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(149, 26)
-        Me.TextBox6.TabIndex = 30
+        Me.TextoTelefono.BackColor = System.Drawing.Color.Silver
+        Me.TextoTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoTelefono.Location = New System.Drawing.Point(653, 107)
+        Me.TextoTelefono.Name = "TextoTelefono"
+        Me.TextoTelefono.Size = New System.Drawing.Size(176, 26)
+        Me.TextoTelefono.TabIndex = 50
         '
-        'Label7
+        'TextoNombre
         '
-        Me.Label7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(6, 75)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(137, 25)
-        Me.Label7.TabIndex = 29
-        Me.Label7.Text = "NACIONALIDAD"
+        Me.TextoNombre.BackColor = System.Drawing.Color.Silver
+        Me.TextoNombre.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoNombre.Location = New System.Drawing.Point(149, 37)
+        Me.TextoNombre.Name = "TextoNombre"
+        Me.TextoNombre.Size = New System.Drawing.Size(163, 26)
+        Me.TextoNombre.TabIndex = 33
         '
-        'Label6
+        'TextoEdad
         '
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(561, 40)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 25)
-        Me.Label6.TabIndex = 28
-        Me.Label6.Text = "CÉDULA"
+        Me.TextoEdad.BackColor = System.Drawing.Color.Silver
+        Me.TextoEdad.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoEdad.Location = New System.Drawing.Point(653, 72)
+        Me.TextoEdad.Name = "TextoEdad"
+        Me.TextoEdad.Size = New System.Drawing.Size(176, 26)
+        Me.TextoEdad.TabIndex = 30
         '
-        'TextBox5
+        'LabelNacionalidad
         '
-        Me.TextBox5.BackColor = System.Drawing.Color.Silver
-        Me.TextBox5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox5.Location = New System.Drawing.Point(657, 40)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(129, 26)
-        Me.TextBox5.TabIndex = 27
+        Me.LabelNacionalidad.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelNacionalidad.Location = New System.Drawing.Point(6, 75)
+        Me.LabelNacionalidad.Name = "LabelNacionalidad"
+        Me.LabelNacionalidad.Size = New System.Drawing.Size(137, 25)
+        Me.LabelNacionalidad.TabIndex = 29
+        Me.LabelNacionalidad.Text = "NACIONALIDAD"
         '
-        'TextBox4
+        'LabelCedula
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.Silver
-        Me.TextBox4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox4.Location = New System.Drawing.Point(112, 110)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(674, 26)
-        Me.TextBox4.TabIndex = 26
+        Me.LabelCedula.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelCedula.Location = New System.Drawing.Point(561, 40)
+        Me.LabelCedula.Name = "LabelCedula"
+        Me.LabelCedula.Size = New System.Drawing.Size(86, 25)
+        Me.LabelCedula.TabIndex = 28
+        Me.LabelCedula.Text = "CÉDULA"
         '
-        'Label5
+        'TextoCedula
         '
-        Me.Label5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(6, 110)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(100, 25)
-        Me.Label5.TabIndex = 25
-        Me.Label5.Text = "DIRECCIÓN"
+        Me.TextoCedula.BackColor = System.Drawing.Color.Silver
+        Me.TextoCedula.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoCedula.Location = New System.Drawing.Point(653, 40)
+        Me.TextoCedula.Name = "TextoCedula"
+        Me.TextoCedula.Size = New System.Drawing.Size(176, 26)
+        Me.TextoCedula.TabIndex = 27
         '
-        'Label2
+        'TextoDireccion
         '
-        Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(563, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 25)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "EDAD"
+        Me.TextoDireccion.BackColor = System.Drawing.Color.Silver
+        Me.TextoDireccion.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoDireccion.Location = New System.Drawing.Point(149, 110)
+        Me.TextoDireccion.Name = "TextoDireccion"
+        Me.TextoDireccion.Size = New System.Drawing.Size(269, 26)
+        Me.TextoDireccion.TabIndex = 26
         '
-        'Label4
+        'LabelDireccion
         '
-        Me.Label4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(318, 75)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(108, 25)
-        Me.Label4.TabIndex = 24
-        Me.Label4.Text = "LICENCIA#"
+        Me.LabelDireccion.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelDireccion.Location = New System.Drawing.Point(6, 110)
+        Me.LabelDireccion.Name = "LabelDireccion"
+        Me.LabelDireccion.Size = New System.Drawing.Size(100, 25)
+        Me.LabelDireccion.TabIndex = 25
+        Me.LabelDireccion.Text = "DIRECCIÓN"
         '
-        'TextBox3
+        'LabelEdad
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.Silver
-        Me.TextBox3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox3.Location = New System.Drawing.Point(424, 40)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(129, 26)
-        Me.TextBox3.TabIndex = 23
+        Me.LabelEdad.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelEdad.Location = New System.Drawing.Point(563, 78)
+        Me.LabelEdad.Name = "LabelEdad"
+        Me.LabelEdad.Size = New System.Drawing.Size(68, 25)
+        Me.LabelEdad.TabIndex = 20
+        Me.LabelEdad.Text = "EDAD"
         '
-        'Label3
+        'LabelLicencia
         '
-        Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(318, 40)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 25)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "APELLIDO"
+        Me.LabelLicencia.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelLicencia.Location = New System.Drawing.Point(318, 75)
+        Me.LabelLicencia.Name = "LabelLicencia"
+        Me.LabelLicencia.Size = New System.Drawing.Size(100, 25)
+        Me.LabelLicencia.TabIndex = 24
+        Me.LabelLicencia.Text = "LICENCIA#"
         '
-        'TextBox2
+        'TextoApellido
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.Silver
-        Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox2.Location = New System.Drawing.Point(149, 75)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(163, 26)
-        Me.TextBox2.TabIndex = 21
+        Me.TextoApellido.BackColor = System.Drawing.Color.Silver
+        Me.TextoApellido.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoApellido.Location = New System.Drawing.Point(424, 40)
+        Me.TextoApellido.Name = "TextoApellido"
+        Me.TextoApellido.Size = New System.Drawing.Size(129, 26)
+        Me.TextoApellido.TabIndex = 23
         '
-        'txtLicencia
+        'LabelApellido
         '
-        Me.txtLicencia.BackColor = System.Drawing.Color.Silver
-        Me.txtLicencia.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txtLicencia.Location = New System.Drawing.Point(432, 75)
-        Me.txtLicencia.Name = "txtLicencia"
-        Me.txtLicencia.Size = New System.Drawing.Size(121, 26)
-        Me.txtLicencia.TabIndex = 13
+        Me.LabelApellido.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelApellido.Location = New System.Drawing.Point(318, 40)
+        Me.LabelApellido.Name = "LabelApellido"
+        Me.LabelApellido.Size = New System.Drawing.Size(100, 25)
+        Me.LabelApellido.TabIndex = 22
+        Me.LabelApellido.Text = "APELLIDO"
         '
-        'lblnambre
+        'TextoNacionalidad
         '
-        Me.lblnambre.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblnambre.Location = New System.Drawing.Point(6, 41)
-        Me.lblnambre.Name = "lblnambre"
-        Me.lblnambre.Size = New System.Drawing.Size(100, 25)
-        Me.lblnambre.TabIndex = 0
-        Me.lblnambre.Text = "NOMBRE"
+        Me.TextoNacionalidad.BackColor = System.Drawing.Color.Silver
+        Me.TextoNacionalidad.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoNacionalidad.Location = New System.Drawing.Point(149, 75)
+        Me.TextoNacionalidad.Name = "TextoNacionalidad"
+        Me.TextoNacionalidad.Size = New System.Drawing.Size(163, 26)
+        Me.TextoNacionalidad.TabIndex = 21
         '
-        'gvbdatosdereserva
+        'TextoLicencia
         '
-        Me.gvbdatosdereserva.BackColor = System.Drawing.Color.White
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox15)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox14)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox13)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox12)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox11)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox10)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox8)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox7)
-        Me.gvbdatosdereserva.Controls.Add(Me.TextBox1)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label15)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label14)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label13)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label11)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label10)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label9)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label8)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label1)
-        Me.gvbdatosdereserva.Controls.Add(Me.Label12)
-        Me.gvbdatosdereserva.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.gvbdatosdereserva.Location = New System.Drawing.Point(12, 178)
-        Me.gvbdatosdereserva.Name = "gvbdatosdereserva"
-        Me.gvbdatosdereserva.Size = New System.Drawing.Size(860, 294)
-        Me.gvbdatosdereserva.TabIndex = 6
-        Me.gvbdatosdereserva.TabStop = False
-        Me.gvbdatosdereserva.Text = "DATOS DEL VEHICULO ALQUILADO"
+        Me.TextoLicencia.BackColor = System.Drawing.Color.Silver
+        Me.TextoLicencia.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoLicencia.Location = New System.Drawing.Point(424, 75)
+        Me.TextoLicencia.Name = "TextoLicencia"
+        Me.TextoLicencia.Size = New System.Drawing.Size(129, 26)
+        Me.TextoLicencia.TabIndex = 13
+        '
+        'LabelNombre
+        '
+        Me.LabelNombre.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNombre.Location = New System.Drawing.Point(6, 41)
+        Me.LabelNombre.Name = "LabelNombre"
+        Me.LabelNombre.Size = New System.Drawing.Size(100, 25)
+        Me.LabelNombre.TabIndex = 0
+        Me.LabelNombre.Text = "NOMBRE"
+        '
+        'GrupoDatosDelVehiculo
+        '
+        Me.GrupoDatosDelVehiculo.BackColor = System.Drawing.Color.White
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox15)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox14)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox13)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox12)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox11)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox10)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox8)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox7)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextBox1)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label15)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label14)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label13)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label11)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label10)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label9)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label8)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label1)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label12)
+        Me.GrupoDatosDelVehiculo.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.GrupoDatosDelVehiculo.Location = New System.Drawing.Point(12, 178)
+        Me.GrupoDatosDelVehiculo.Name = "GrupoDatosDelVehiculo"
+        Me.GrupoDatosDelVehiculo.Size = New System.Drawing.Size(860, 294)
+        Me.GrupoDatosDelVehiculo.TabIndex = 6
+        Me.GrupoDatosDelVehiculo.TabStop = False
+        Me.GrupoDatosDelVehiculo.Text = "DATOS DEL VEHICULO ALQUILADO"
         '
         'TextBox15
         '
         Me.TextBox15.BackColor = System.Drawing.Color.Silver
         Me.TextBox15.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox15.Location = New System.Drawing.Point(618, 214)
+        Me.TextBox15.Location = New System.Drawing.Point(636, 214)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(168, 31)
+        Me.TextBox15.Size = New System.Drawing.Size(149, 31)
         Me.TextBox15.TabIndex = 42
         '
         'TextBox14
         '
         Me.TextBox14.BackColor = System.Drawing.Color.Silver
         Me.TextBox14.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox14.Location = New System.Drawing.Point(538, 128)
+        Me.TextBox14.Location = New System.Drawing.Point(637, 128)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(248, 31)
+        Me.TextBox14.Size = New System.Drawing.Size(149, 31)
         Me.TextBox14.TabIndex = 41
         '
         'TextBox13
         '
         Me.TextBox13.BackColor = System.Drawing.Color.Silver
         Me.TextBox13.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox13.Location = New System.Drawing.Point(543, 76)
+        Me.TextBox13.Location = New System.Drawing.Point(637, 76)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(243, 31)
+        Me.TextBox13.Size = New System.Drawing.Size(149, 31)
         Me.TextBox13.TabIndex = 40
         '
         'TextBox12
         '
         Me.TextBox12.BackColor = System.Drawing.Color.Silver
         Me.TextBox12.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox12.Location = New System.Drawing.Point(638, 30)
+        Me.TextBox12.Location = New System.Drawing.Point(637, 30)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(148, 31)
         Me.TextBox12.TabIndex = 39
@@ -323,36 +345,36 @@ Partial Class Form6
         '
         Me.TextBox10.BackColor = System.Drawing.Color.Silver
         Me.TextBox10.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox10.Location = New System.Drawing.Point(186, 171)
+        Me.TextBox10.Location = New System.Drawing.Point(189, 171)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(240, 31)
+        Me.TextBox10.Size = New System.Drawing.Size(237, 31)
         Me.TextBox10.TabIndex = 37
         '
         'TextBox8
         '
         Me.TextBox8.BackColor = System.Drawing.Color.Silver
         Me.TextBox8.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox8.Location = New System.Drawing.Point(181, 128)
+        Me.TextBox8.Location = New System.Drawing.Point(189, 128)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(245, 31)
+        Me.TextBox8.Size = New System.Drawing.Size(237, 31)
         Me.TextBox8.TabIndex = 36
         '
         'TextBox7
         '
         Me.TextBox7.BackColor = System.Drawing.Color.Silver
         Me.TextBox7.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox7.Location = New System.Drawing.Point(175, 85)
+        Me.TextBox7.Location = New System.Drawing.Point(189, 85)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(251, 31)
+        Me.TextBox7.Size = New System.Drawing.Size(237, 31)
         Me.TextBox7.TabIndex = 35
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.Silver
         Me.TextBox1.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(149, 42)
+        Me.TextBox1.Location = New System.Drawing.Point(189, 42)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(277, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(237, 31)
         Me.TextBox1.TabIndex = 34
         '
         'Label15
@@ -443,37 +465,37 @@ Partial Class Form6
         Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnContinuar)
-        Me.Controls.Add(Me.gvbReservacion)
-        Me.Controls.Add(Me.gvbdatosdereserva)
+        Me.Controls.Add(Me.GrupoReservacion)
+        Me.Controls.Add(Me.GrupoDatosDelVehiculo)
         Me.Name = "Form6"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PANAMA CAR RENTAL - ALQUILER"
-        Me.gvbReservacion.ResumeLayout(False)
-        Me.gvbReservacion.PerformLayout()
-        Me.gvbdatosdereserva.ResumeLayout(False)
-        Me.gvbdatosdereserva.PerformLayout()
+        Me.GrupoReservacion.ResumeLayout(False)
+        Me.GrupoReservacion.PerformLayout()
+        Me.GrupoDatosDelVehiculo.ResumeLayout(False)
+        Me.GrupoDatosDelVehiculo.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Label12 As Label
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnContinuar As Button
-    Friend WithEvents gvbReservacion As GroupBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents txtLicencia As TextBox
-    Friend WithEvents lblnambre As Label
-    Friend WithEvents gvbdatosdereserva As GroupBox
+    Friend WithEvents GrupoReservacion As GroupBox
+    Friend WithEvents TextoNombre As TextBox
+    Friend WithEvents TextoEdad As TextBox
+    Friend WithEvents LabelNacionalidad As Label
+    Friend WithEvents LabelCedula As Label
+    Friend WithEvents TextoCedula As TextBox
+    Friend WithEvents TextoDireccion As TextBox
+    Friend WithEvents LabelDireccion As Label
+    Friend WithEvents LabelEdad As Label
+    Friend WithEvents LabelLicencia As Label
+    Friend WithEvents TextoApellido As TextBox
+    Friend WithEvents LabelApellido As Label
+    Friend WithEvents TextoNacionalidad As TextBox
+    Friend WithEvents TextoLicencia As TextBox
+    Friend WithEvents LabelNombre As Label
+    Friend WithEvents GrupoDatosDelVehiculo As GroupBox
     Friend WithEvents TextBox15 As TextBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents TextBox13 As TextBox
@@ -491,4 +513,6 @@ Partial Class Form6
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents LabelTelefono As Label
+    Friend WithEvents TextoTelefono As TextBox
 End Class

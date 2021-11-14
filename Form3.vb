@@ -7,17 +7,6 @@
     Dim VPrecioDia
     Dim VPrecioSemana
     Dim VPrecioMes
-
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
-        Dispose()
-        TextoHora.Text = ""
-        TextoDia.Text = ""
-        TextoSemana.Text = ""
-        TextoMes.Text = ""
-
-    End Sub
-
     Private Sub ComboOpciones_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboOpciones.SelectedIndexChanged
 
         Select Case ComboOpciones.SelectedIndex
@@ -72,17 +61,21 @@
                 VPrecioSemana = 1009
                 VPrecioMes = 10009
         End Select
-
-
-#Disable Warning BC42104 ' Variable is used before it has been assigned a value
         TextoHora.Text = SignoDeBalboa & VPrecioHora
         TextoDia.Text = SignoDeBalboa & VPrecioDia
         TextoSemana.Text = SignoDeBalboa & VPrecioSemana
         TextoMes.Text = SignoDeBalboa & VPrecioMes
-#Enable Warning BC42104 ' Variable is used before it has been assigned a value
     End Sub
-
     Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
         Form5.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
+        Dispose()
+        TextoHora.Text = ""
+        TextoDia.Text = ""
+        TextoSemana.Text = ""
+        TextoMes.Text = ""
+
     End Sub
 End Class
