@@ -23,6 +23,8 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GrupoDetallesConductor = New System.Windows.Forms.GroupBox()
+        Me.LabelTelefono = New System.Windows.Forms.Label()
+        Me.TextoTelefono = New System.Windows.Forms.TextBox()
         Me.TextoNombre = New System.Windows.Forms.TextBox()
         Me.TextoEdad = New System.Windows.Forms.TextBox()
         Me.LabelNacionalidad = New System.Windows.Forms.Label()
@@ -59,11 +61,8 @@ Partial Class Form5
         Me.LabelModeloVehiculo = New System.Windows.Forms.Label()
         Me.ComboModeloOpciones = New System.Windows.Forms.ComboBox()
         Me.LabelLugarRetiro = New System.Windows.Forms.Label()
-        Me.BotonReservar = New System.Windows.Forms.Button()
         Me.BotonCancelar = New System.Windows.Forms.Button()
-        Me.LabelTelefono = New System.Windows.Forms.Label()
-        Me.TextoTelefono = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.GrupoDetallesConductor.SuspendLayout()
         Me.GrupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
@@ -73,7 +72,7 @@ Partial Class Form5
         '
         'GrupoDetallesConductor
         '
-        Me.GrupoDetallesConductor.BackColor = System.Drawing.Color.White
+        Me.GrupoDetallesConductor.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelTelefono)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoTelefono)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoNombre)
@@ -98,9 +97,27 @@ Partial Class Form5
         Me.GrupoDetallesConductor.TabStop = False
         Me.GrupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
         '
+        'LabelTelefono
+        '
+        Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelTelefono.Location = New System.Drawing.Point(603, 123)
+        Me.LabelTelefono.Name = "LabelTelefono"
+        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
+        Me.LabelTelefono.TabIndex = 51
+        Me.LabelTelefono.Text = "TEL."
+        '
+        'TextoTelefono
+        '
+        Me.TextoTelefono.BackColor = System.Drawing.Color.White
+        Me.TextoTelefono.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.TextoTelefono.Location = New System.Drawing.Point(695, 115)
+        Me.TextoTelefono.Name = "TextoTelefono"
+        Me.TextoTelefono.Size = New System.Drawing.Size(133, 31)
+        Me.TextoTelefono.TabIndex = 52
+        '
         'TextoNombre
         '
-        Me.TextoNombre.BackColor = System.Drawing.Color.Silver
+        Me.TextoNombre.BackColor = System.Drawing.Color.White
         Me.TextoNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoNombre.Location = New System.Drawing.Point(154, 35)
         Me.TextoNombre.Name = "TextoNombre"
@@ -109,7 +126,7 @@ Partial Class Form5
         '
         'TextoEdad
         '
-        Me.TextoEdad.BackColor = System.Drawing.Color.Silver
+        Me.TextoEdad.BackColor = System.Drawing.Color.White
         Me.TextoEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoEdad.Location = New System.Drawing.Point(695, 75)
         Me.TextoEdad.Name = "TextoEdad"
@@ -136,7 +153,7 @@ Partial Class Form5
         '
         'TextoCedula
         '
-        Me.TextoCedula.BackColor = System.Drawing.Color.Silver
+        Me.TextoCedula.BackColor = System.Drawing.Color.White
         Me.TextoCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoCedula.Location = New System.Drawing.Point(697, 35)
         Me.TextoCedula.Name = "TextoCedula"
@@ -145,7 +162,7 @@ Partial Class Form5
         '
         'TextoDireccion
         '
-        Me.TextoDireccion.BackColor = System.Drawing.Color.Silver
+        Me.TextoDireccion.BackColor = System.Drawing.Color.White
         Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoDireccion.Location = New System.Drawing.Point(154, 115)
         Me.TextoDireccion.Name = "TextoDireccion"
@@ -181,7 +198,7 @@ Partial Class Form5
         '
         'TextoApellido
         '
-        Me.TextoApellido.BackColor = System.Drawing.Color.Silver
+        Me.TextoApellido.BackColor = System.Drawing.Color.White
         Me.TextoApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoApellido.Location = New System.Drawing.Point(453, 35)
         Me.TextoApellido.Name = "TextoApellido"
@@ -199,7 +216,7 @@ Partial Class Form5
         '
         'TextoNacionalidad
         '
-        Me.TextoNacionalidad.BackColor = System.Drawing.Color.Silver
+        Me.TextoNacionalidad.BackColor = System.Drawing.Color.White
         Me.TextoNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoNacionalidad.Location = New System.Drawing.Point(154, 75)
         Me.TextoNacionalidad.Name = "TextoNacionalidad"
@@ -208,7 +225,7 @@ Partial Class Form5
         '
         'TextoLicencia
         '
-        Me.TextoLicencia.BackColor = System.Drawing.Color.Silver
+        Me.TextoLicencia.BackColor = System.Drawing.Color.White
         Me.TextoLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoLicencia.Location = New System.Drawing.Point(453, 75)
         Me.TextoLicencia.Name = "TextoLicencia"
@@ -226,7 +243,7 @@ Partial Class Form5
         '
         'GrupoDatosReserva
         '
-        Me.GrupoDatosReserva.BackColor = System.Drawing.Color.White
+        Me.GrupoDatosReserva.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
         Me.GrupoDatosReserva.Controls.Add(Me.grupoDatosReservaTarifa)
         Me.GrupoDatosReserva.Controls.Add(Me.GrupoTipoAuto)
         Me.GrupoDatosReserva.Controls.Add(Me.ComboSucursales)
@@ -292,12 +309,13 @@ Partial Class Form5
         '
         'GrupoTarifaElegida
         '
-        Me.GrupoTarifaElegida.BackColor = System.Drawing.Color.Silver
+        Me.GrupoTarifaElegida.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.GrupoTarifaElegida.Controls.Add(Me.RadioTarifaElegidaDias)
         Me.GrupoTarifaElegida.Controls.Add(Me.RadioTarifaElegidaSemanas)
         Me.GrupoTarifaElegida.Controls.Add(Me.RadioTarifaElegidaMeses)
         Me.GrupoTarifaElegida.Controls.Add(Me.RadioTarifaElegidaHoras)
         Me.GrupoTarifaElegida.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoTarifaElegida.ForeColor = System.Drawing.Color.White
         Me.GrupoTarifaElegida.Location = New System.Drawing.Point(6, 30)
         Me.GrupoTarifaElegida.Name = "GrupoTarifaElegida"
         Me.GrupoTarifaElegida.Size = New System.Drawing.Size(462, 86)
@@ -407,10 +425,11 @@ Partial Class Form5
         '
         'GrupoTipoAuto
         '
-        Me.GrupoTipoAuto.BackColor = System.Drawing.Color.Silver
+        Me.GrupoTipoAuto.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.GrupoTipoAuto.Controls.Add(Me.RadioTipoVehiculoLujo)
         Me.GrupoTipoAuto.Controls.Add(Me.RadioTipoVehiculoFamiliar)
         Me.GrupoTipoAuto.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrupoTipoAuto.ForeColor = System.Drawing.Color.White
         Me.GrupoTipoAuto.Location = New System.Drawing.Point(16, 30)
         Me.GrupoTipoAuto.Name = "GrupoTipoAuto"
         Me.GrupoTipoAuto.Size = New System.Drawing.Size(336, 86)
@@ -482,56 +501,29 @@ Partial Class Form5
         Me.LabelLugarRetiro.TabIndex = 18
         Me.LabelLugarRetiro.Text = "LUGAR A RETIRAR EL VEHICULO"
         '
-        'BotonReservar
-        '
-        Me.BotonReservar.BackColor = System.Drawing.Color.White
-        Me.BotonReservar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.BotonReservar.Location = New System.Drawing.Point(12, 478)
-        Me.BotonReservar.Name = "BotonReservar"
-        Me.BotonReservar.Size = New System.Drawing.Size(243, 71)
-        Me.BotonReservar.TabIndex = 2
-        Me.BotonReservar.Text = "RESERVAR"
-        Me.BotonReservar.UseVisualStyleBackColor = False
-        '
         'BotonCancelar
         '
-        Me.BotonCancelar.BackColor = System.Drawing.Color.White
-        Me.BotonCancelar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.BotonCancelar.Location = New System.Drawing.Point(629, 479)
+        Me.BotonCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.BotonCancelar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonCancelar.ForeColor = System.Drawing.Color.White
+        Me.BotonCancelar.Location = New System.Drawing.Point(100, 500)
         Me.BotonCancelar.Name = "BotonCancelar"
-        Me.BotonCancelar.Size = New System.Drawing.Size(243, 71)
-        Me.BotonCancelar.TabIndex = 4
-        Me.BotonCancelar.Text = "CANCELAR"
+        Me.BotonCancelar.Size = New System.Drawing.Size(250, 50)
+        Me.BotonCancelar.TabIndex = 55
+        Me.BotonCancelar.Text = "C&ANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
         '
-        'LabelTelefono
+        'BotonContinuar
         '
-        Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelTelefono.Location = New System.Drawing.Point(603, 123)
-        Me.LabelTelefono.Name = "LabelTelefono"
-        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
-        Me.LabelTelefono.TabIndex = 51
-        Me.LabelTelefono.Text = "TEL."
-        '
-        'TextoTelefono
-        '
-        Me.TextoTelefono.BackColor = System.Drawing.Color.Silver
-        Me.TextoTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextoTelefono.Location = New System.Drawing.Point(695, 120)
-        Me.TextoTelefono.Name = "TextoTelefono"
-        Me.TextoTelefono.Size = New System.Drawing.Size(133, 26)
-        Me.TextoTelefono.TabIndex = 52
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(343, 478)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(243, 71)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "LIMPIAR"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BotonContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.BotonContinuar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonContinuar.ForeColor = System.Drawing.Color.White
+        Me.BotonContinuar.Location = New System.Drawing.Point(500, 500)
+        Me.BotonContinuar.Name = "BotonContinuar"
+        Me.BotonContinuar.Size = New System.Drawing.Size(250, 50)
+        Me.BotonContinuar.TabIndex = 54
+        Me.BotonContinuar.Text = "&CONTINUAR"
+        Me.BotonContinuar.UseVisualStyleBackColor = False
         '
         'Form5
         '
@@ -539,11 +531,10 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(884, 561)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.BotonCancelar)
-        Me.Controls.Add(Me.BotonReservar)
         Me.Controls.Add(Me.GrupoDatosReserva)
+        Me.Controls.Add(Me.BotonCancelar)
         Me.Controls.Add(Me.GrupoDetallesConductor)
+        Me.Controls.Add(Me.BotonContinuar)
         Me.Name = "Form5"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RESERVACION"
@@ -575,8 +566,6 @@ Partial Class Form5
     Friend WithEvents RadioTarifaElegidaSemanas As RadioButton
     Friend WithEvents RadioTarifaElegidaMeses As RadioButton
     Friend WithEvents RadioTarifaElegidaHoras As RadioButton
-    Friend WithEvents BotonReservar As Button
-    Friend WithEvents BotonCancelar As Button
     Friend WithEvents TextoApellido As TextBox
     Friend WithEvents LabelApellido As Label
     Friend WithEvents TextoNacionalidad As TextBox
@@ -602,5 +591,6 @@ Partial Class Form5
     Friend WithEvents LabelMetodoPago As Label
     Friend WithEvents LabelTelefono As Label
     Friend WithEvents TextoTelefono As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BotonCancelar As Button
+    Friend WithEvents BotonContinuar As Button
 End Class

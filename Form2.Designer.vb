@@ -24,12 +24,12 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.GrupoOpciones = New System.Windows.Forms.GroupBox()
+        Me.RadioFamiliar = New System.Windows.Forms.RadioButton()
+        Me.RadioLujo = New System.Windows.Forms.RadioButton()
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.ImgLujo = New System.Windows.Forms.PictureBox()
         Me.ImgFamiliar = New System.Windows.Forms.PictureBox()
-        Me.RadioLujo = New System.Windows.Forms.RadioButton()
-        Me.RadioFamiliar = New System.Windows.Forms.RadioButton()
         Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.GrupoOpciones.SuspendLayout()
         CType(Me.ImgLujo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -38,48 +38,76 @@ Partial Class Form2
         '
         'GrupoOpciones
         '
+        Me.GrupoOpciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GrupoOpciones.Controls.Add(Me.RadioFamiliar)
+        Me.GrupoOpciones.Controls.Add(Me.RadioLujo)
+        Me.GrupoOpciones.Controls.Add(Me.ImgLujo)
         Me.GrupoOpciones.Controls.Add(Me.BotonContinuar)
         Me.GrupoOpciones.Controls.Add(Me.BotonCancelar)
-        Me.GrupoOpciones.Controls.Add(Me.ImgLujo)
         Me.GrupoOpciones.Controls.Add(Me.ImgFamiliar)
-        Me.GrupoOpciones.Controls.Add(Me.RadioLujo)
-        Me.GrupoOpciones.Controls.Add(Me.RadioFamiliar)
         Me.GrupoOpciones.Font = New System.Drawing.Font("Candara", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrupoOpciones.Location = New System.Drawing.Point(12, 60)
+        Me.GrupoOpciones.ForeColor = System.Drawing.Color.Black
+        Me.GrupoOpciones.Location = New System.Drawing.Point(12, 80)
         Me.GrupoOpciones.Name = "GrupoOpciones"
-        Me.GrupoOpciones.Size = New System.Drawing.Size(858, 489)
+        Me.GrupoOpciones.Size = New System.Drawing.Size(858, 469)
         Me.GrupoOpciones.TabIndex = 1
         Me.GrupoOpciones.TabStop = False
         Me.GrupoOpciones.Text = "ESCOJA UNA OPCIÓN"
         '
+        'RadioFamiliar
+        '
+        Me.RadioFamiliar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.RadioFamiliar.Location = New System.Drawing.Point(525, 300)
+        Me.RadioFamiliar.Name = "RadioFamiliar"
+        Me.RadioFamiliar.Size = New System.Drawing.Size(250, 30)
+        Me.RadioFamiliar.TabIndex = 9
+        Me.RadioFamiliar.TabStop = True
+        Me.RadioFamiliar.Text = "MODELOS FAMILIARES"
+        Me.RadioFamiliar.UseVisualStyleBackColor = True
+        '
+        'RadioLujo
+        '
+        Me.RadioLujo.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.RadioLujo.Location = New System.Drawing.Point(100, 300)
+        Me.RadioLujo.Name = "RadioLujo"
+        Me.RadioLujo.Size = New System.Drawing.Size(250, 30)
+        Me.RadioLujo.TabIndex = 8
+        Me.RadioLujo.TabStop = True
+        Me.RadioLujo.Text = "MODELOS DE LUJO"
+        Me.RadioLujo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.RadioLujo.UseVisualStyleBackColor = True
+        '
         'BotonContinuar
         '
-        Me.BotonContinuar.BackColor = System.Drawing.Color.White
+        Me.BotonContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.BotonContinuar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BotonContinuar.Location = New System.Drawing.Point(534, 349)
+        Me.BotonContinuar.ForeColor = System.Drawing.Color.White
+        Me.BotonContinuar.Location = New System.Drawing.Point(500, 350)
         Me.BotonContinuar.Name = "BotonContinuar"
-        Me.BotonContinuar.Size = New System.Drawing.Size(218, 100)
+        Me.BotonContinuar.Size = New System.Drawing.Size(300, 50)
         Me.BotonContinuar.TabIndex = 7
         Me.BotonContinuar.Text = "C&ONTINUAR"
         Me.BotonContinuar.UseVisualStyleBackColor = False
         '
         'BotonCancelar
         '
-        Me.BotonCancelar.BackColor = System.Drawing.Color.White
+        Me.BotonCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.BotonCancelar.FlatAppearance.BorderSize = 0
         Me.BotonCancelar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BotonCancelar.Location = New System.Drawing.Point(126, 349)
+        Me.BotonCancelar.ForeColor = System.Drawing.Color.White
+        Me.BotonCancelar.Location = New System.Drawing.Point(100, 350)
         Me.BotonCancelar.Name = "BotonCancelar"
-        Me.BotonCancelar.Size = New System.Drawing.Size(218, 100)
+        Me.BotonCancelar.Size = New System.Drawing.Size(300, 50)
         Me.BotonCancelar.TabIndex = 6
         Me.BotonCancelar.Text = "&CANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
         '
         'ImgLujo
         '
-        Me.ImgLujo.Image = CType(resources.GetObject("ImgLujo.Image"), System.Drawing.Image)
-        Me.ImgLujo.Location = New System.Drawing.Point(53, 85)
+        Me.ImgLujo.Image = Global.Tarea.My.Resources.Resources.lujo
+        Me.ImgLujo.Location = New System.Drawing.Point(25, 50)
         Me.ImgLujo.Name = "ImgLujo"
-        Me.ImgLujo.Size = New System.Drawing.Size(350, 200)
+        Me.ImgLujo.Size = New System.Drawing.Size(400, 225)
         Me.ImgLujo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.ImgLujo.TabIndex = 5
         Me.ImgLujo.TabStop = False
@@ -87,53 +115,31 @@ Partial Class Form2
         'ImgFamiliar
         '
         Me.ImgFamiliar.Image = CType(resources.GetObject("ImgFamiliar.Image"), System.Drawing.Image)
-        Me.ImgFamiliar.Location = New System.Drawing.Point(460, 85)
+        Me.ImgFamiliar.Location = New System.Drawing.Point(450, 50)
         Me.ImgFamiliar.Name = "ImgFamiliar"
-        Me.ImgFamiliar.Size = New System.Drawing.Size(350, 200)
+        Me.ImgFamiliar.Size = New System.Drawing.Size(400, 225)
         Me.ImgFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.ImgFamiliar.TabIndex = 4
         Me.ImgFamiliar.TabStop = False
         '
-        'RadioLujo
-        '
-        Me.RadioLujo.AutoSize = True
-        Me.RadioLujo.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.RadioLujo.Location = New System.Drawing.Point(188, 291)
-        Me.RadioLujo.Name = "RadioLujo"
-        Me.RadioLujo.Size = New System.Drawing.Size(77, 30)
-        Me.RadioLujo.TabIndex = 2
-        Me.RadioLujo.TabStop = True
-        Me.RadioLujo.Text = "LUJO"
-        Me.RadioLujo.UseVisualStyleBackColor = True
-        '
-        'RadioFamiliar
-        '
-        Me.RadioFamiliar.AutoSize = True
-        Me.RadioFamiliar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.RadioFamiliar.Location = New System.Drawing.Point(592, 291)
-        Me.RadioFamiliar.Name = "RadioFamiliar"
-        Me.RadioFamiliar.Size = New System.Drawing.Size(119, 30)
-        Me.RadioFamiliar.TabIndex = 0
-        Me.RadioFamiliar.TabStop = True
-        Me.RadioFamiliar.Text = "FAMILIAR"
-        Me.RadioFamiliar.UseVisualStyleBackColor = True
-        '
         'LabelTitulo
         '
+        Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
         Me.LabelTitulo.Cursor = System.Windows.Forms.Cursors.Default
         Me.LabelTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.LabelTitulo.Enabled = False
         Me.LabelTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LabelTitulo.Font = New System.Drawing.Font("Candara", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTitulo.Font = New System.Drawing.Font("Candara", 26.25!, System.Drawing.FontStyle.Bold)
+        Me.LabelTitulo.ForeColor = System.Drawing.Color.Black
+        Me.LabelTitulo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.LabelTitulo.Location = New System.Drawing.Point(0, 0)
-        Me.LabelTitulo.Margin = New System.Windows.Forms.Padding(2)
+        Me.LabelTitulo.Margin = New System.Windows.Forms.Padding(0)
         Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.Padding = New System.Windows.Forms.Padding(0, 15, 0, 15)
         Me.LabelTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.LabelTitulo.Size = New System.Drawing.Size(884, 67)
-        Me.LabelTitulo.TabIndex = 7
+        Me.LabelTitulo.Size = New System.Drawing.Size(884, 75)
+        Me.LabelTitulo.TabIndex = 20
         Me.LabelTitulo.Text = "TARIFAS"
-        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form2
         '
@@ -149,18 +155,17 @@ Partial Class Form2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PANTALLA - PRECIOS"
         Me.GrupoOpciones.ResumeLayout(False)
-        Me.GrupoOpciones.PerformLayout()
         CType(Me.ImgLujo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImgFamiliar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents GrupoOpciones As GroupBox
-    Friend WithEvents RadioFamiliar As RadioButton
-    Friend WithEvents RadioLujo As RadioButton
     Friend WithEvents ImgFamiliar As PictureBox
     Friend WithEvents ImgLujo As PictureBox
     Friend WithEvents BotonCancelar As Button
-    Friend WithEvents LabelTitulo As Label
     Friend WithEvents BotonContinuar As Button
+    Friend WithEvents RadioFamiliar As RadioButton
+    Friend WithEvents RadioLujo As RadioButton
+    Friend WithEvents LabelTitulo As Label
 End Class

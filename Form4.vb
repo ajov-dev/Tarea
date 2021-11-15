@@ -10,7 +10,7 @@
     Dim VPrecioMes
 
 
-    Private Sub ComboModelos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboModelos.SelectedIndexChanged
+    Private Sub ComboModelos_SelectedIndexChanged(sender As Object, e As EventArgs)
 
         Select Case ComboModelos.SelectedIndex
             Case 0
@@ -73,15 +73,14 @@
     End Sub
 
 
-    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs)
         Form5.Show()
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dispose()
         TextoHora.Text = ""
         TextoDia.Text = ""
         TextoSemana.Text = ""
         TextoMes.Text = ""
     End Sub
-
 End Class
