@@ -7,8 +7,8 @@
     Dim VPrecioDia
     Dim VPrecioSemana
     Dim VPrecioMes
-    Private Sub ComboOpciones_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboOpciones.SelectedIndexChanged
 
+    Private Sub ComboOpciones_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboOpciones.SelectedIndexChanged
         Select Case ComboOpciones.SelectedIndex
             Case 0
                 VPrecioHora = 10
@@ -72,10 +72,5 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
         Dispose()
-        TextoHora.Text = ""
-        TextoDia.Text = ""
-        TextoSemana.Text = ""
-        TextoMes.Text = ""
-
     End Sub
 End Class

@@ -27,6 +27,7 @@ Partial Class Form3
         Me.ImgFamiliar = New System.Windows.Forms.PictureBox()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
+        Me.ComboOpciones = New System.Windows.Forms.ComboBox()
         Me.GrupoPrecios = New System.Windows.Forms.GroupBox()
         Me.TextoSemana = New System.Windows.Forms.TextBox()
         Me.TextoDia = New System.Windows.Forms.TextBox()
@@ -36,7 +37,6 @@ Partial Class Form3
         Me.LabelPrecioHora = New System.Windows.Forms.Label()
         Me.LabelPrecioMes = New System.Windows.Forms.Label()
         Me.LabelPrecioDia = New System.Windows.Forms.Label()
-        Me.ComboOpciones = New System.Windows.Forms.ComboBox()
         CType(Me.ImgFamiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrupoPrecios.SuspendLayout()
         Me.SuspendLayout()
@@ -72,9 +72,9 @@ Partial Class Form3
         '
         Me.BotonCancelar.BackColor = System.Drawing.Color.White
         Me.BotonCancelar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BotonCancelar.Location = New System.Drawing.Point(435, 240)
+        Me.BotonCancelar.Location = New System.Drawing.Point(75, 489)
         Me.BotonCancelar.Name = "BotonCancelar"
-        Me.BotonCancelar.Size = New System.Drawing.Size(360, 60)
+        Me.BotonCancelar.Size = New System.Drawing.Size(350, 60)
         Me.BotonCancelar.TabIndex = 18
         Me.BotonCancelar.Text = "C&ANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
@@ -83,12 +83,23 @@ Partial Class Form3
         '
         Me.BotonContinuar.BackColor = System.Drawing.Color.White
         Me.BotonContinuar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BotonContinuar.Location = New System.Drawing.Point(435, 174)
+        Me.BotonContinuar.Location = New System.Drawing.Point(75, 398)
         Me.BotonContinuar.Name = "BotonContinuar"
-        Me.BotonContinuar.Size = New System.Drawing.Size(360, 60)
+        Me.BotonContinuar.Size = New System.Drawing.Size(350, 60)
         Me.BotonContinuar.TabIndex = 17
         Me.BotonContinuar.Text = "&CONTINUAR"
         Me.BotonContinuar.UseVisualStyleBackColor = False
+        '
+        'ComboOpciones
+        '
+        Me.ComboOpciones.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.ComboOpciones.FormattingEnabled = True
+        Me.ComboOpciones.Items.AddRange(New Object() {"Hyundai Accent", "Hyundai Elantra", "Hyundai Grand i10", "Hyundai Tucson", "Hyundai Santa Fe", "Kia Rio", "Kia Cerato", "Kia Optima", "Kia Carnival", "Kia Sportage"})
+        Me.ComboOpciones.Location = New System.Drawing.Point(75, 334)
+        Me.ComboOpciones.Name = "ComboOpciones"
+        Me.ComboOpciones.Size = New System.Drawing.Size(350, 34)
+        Me.ComboOpciones.TabIndex = 19
+        Me.ComboOpciones.Text = "SELECCIONE UN MODELO"
         '
         'GrupoPrecios
         '
@@ -102,50 +113,54 @@ Partial Class Form3
         Me.GrupoPrecios.Controls.Add(Me.LabelPrecioMes)
         Me.GrupoPrecios.Controls.Add(Me.LabelPrecioDia)
         Me.GrupoPrecios.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrupoPrecios.Location = New System.Drawing.Point(76, 318)
+        Me.GrupoPrecios.Location = New System.Drawing.Point(473, 100)
         Me.GrupoPrecios.Name = "GrupoPrecios"
-        Me.GrupoPrecios.Size = New System.Drawing.Size(720, 231)
-        Me.GrupoPrecios.TabIndex = 16
+        Me.GrupoPrecios.Size = New System.Drawing.Size(332, 449)
+        Me.GrupoPrecios.TabIndex = 20
         Me.GrupoPrecios.TabStop = False
         Me.GrupoPrecios.Text = "PRECIOS DE ALQUILER (SEGURO INCLUIDO)"
         '
         'TextoSemana
         '
         Me.TextoSemana.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextoSemana.Location = New System.Drawing.Point(470, 71)
+        Me.TextoSemana.Location = New System.Drawing.Point(37, 290)
         Me.TextoSemana.Name = "TextoSemana"
         Me.TextoSemana.Size = New System.Drawing.Size(100, 31)
         Me.TextoSemana.TabIndex = 11
+        Me.TextoSemana.Text = "PRECIO B/."
         '
         'TextoDia
         '
         Me.TextoDia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextoDia.Location = New System.Drawing.Point(102, 153)
+        Me.TextoDia.Location = New System.Drawing.Point(37, 190)
         Me.TextoDia.Name = "TextoDia"
         Me.TextoDia.Size = New System.Drawing.Size(100, 31)
         Me.TextoDia.TabIndex = 10
+        Me.TextoDia.Text = "PRECIO B/."
         '
         'TextoMes
         '
         Me.TextoMes.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextoMes.Location = New System.Drawing.Point(470, 153)
+        Me.TextoMes.Location = New System.Drawing.Point(37, 390)
         Me.TextoMes.Name = "TextoMes"
         Me.TextoMes.Size = New System.Drawing.Size(100, 31)
         Me.TextoMes.TabIndex = 9
+        Me.TextoMes.Text = "PRECIO B/."
         '
         'TextoHora
         '
         Me.TextoHora.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextoHora.Location = New System.Drawing.Point(102, 71)
+        Me.TextoHora.Location = New System.Drawing.Point(37, 90)
         Me.TextoHora.Name = "TextoHora"
         Me.TextoHora.Size = New System.Drawing.Size(100, 31)
         Me.TextoHora.TabIndex = 8
+        Me.TextoHora.Text = "PRECIO B/."
         '
         'LabelPrecioSemana
         '
         Me.LabelPrecioSemana.AutoSize = True
         Me.LabelPrecioSemana.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPrecioSemana.Location = New System.Drawing.Point(574, 79)
+        Me.LabelPrecioSemana.Location = New System.Drawing.Point(143, 298)
         Me.LabelPrecioSemana.Name = "LabelPrecioSemana"
         Me.LabelPrecioSemana.Size = New System.Drawing.Size(98, 23)
         Me.LabelPrecioSemana.TabIndex = 7
@@ -156,7 +171,7 @@ Partial Class Form3
         '
         Me.LabelPrecioHora.AutoSize = True
         Me.LabelPrecioHora.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPrecioHora.Location = New System.Drawing.Point(206, 79)
+        Me.LabelPrecioHora.Location = New System.Drawing.Point(143, 98)
         Me.LabelPrecioHora.Name = "LabelPrecioHora"
         Me.LabelPrecioHora.Size = New System.Drawing.Size(73, 23)
         Me.LabelPrecioHora.TabIndex = 6
@@ -167,7 +182,7 @@ Partial Class Form3
         '
         Me.LabelPrecioMes.AutoSize = True
         Me.LabelPrecioMes.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPrecioMes.Location = New System.Drawing.Point(576, 161)
+        Me.LabelPrecioMes.Location = New System.Drawing.Point(143, 398)
         Me.LabelPrecioMes.Name = "LabelPrecioMes"
         Me.LabelPrecioMes.Size = New System.Drawing.Size(61, 23)
         Me.LabelPrecioMes.TabIndex = 5
@@ -178,23 +193,12 @@ Partial Class Form3
         '
         Me.LabelPrecioDia.AutoSize = True
         Me.LabelPrecioDia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPrecioDia.Location = New System.Drawing.Point(208, 161)
+        Me.LabelPrecioDia.Location = New System.Drawing.Point(143, 198)
         Me.LabelPrecioDia.Name = "LabelPrecioDia"
         Me.LabelPrecioDia.Size = New System.Drawing.Size(54, 23)
         Me.LabelPrecioDia.TabIndex = 4
         Me.LabelPrecioDia.Text = "&X DÍA"
         Me.LabelPrecioDia.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'ComboOpciones
-        '
-        Me.ComboOpciones.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.ComboOpciones.FormattingEnabled = True
-        Me.ComboOpciones.Items.AddRange(New Object() {"Hyundai Accent", "Hyundai Elantra", "Hyundai Grand i10", "Hyundai Tucson", "Hyundai Santa Fe", "Kia Rio", "Kia Cerato", "Kia Optima", "Kia Carnival", "Kia Sportage"})
-        Me.ComboOpciones.Location = New System.Drawing.Point(435, 100)
-        Me.ComboOpciones.Name = "ComboOpciones"
-        Me.ComboOpciones.Size = New System.Drawing.Size(360, 34)
-        Me.ComboOpciones.TabIndex = 15
-        Me.ComboOpciones.Text = "SELECCIONE UNA OPCION"
         '
         'Form3
         '
@@ -202,10 +206,10 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(884, 561)
-        Me.Controls.Add(Me.BotonCancelar)
-        Me.Controls.Add(Me.BotonContinuar)
         Me.Controls.Add(Me.GrupoPrecios)
         Me.Controls.Add(Me.ComboOpciones)
+        Me.Controls.Add(Me.BotonCancelar)
+        Me.Controls.Add(Me.BotonContinuar)
         Me.Controls.Add(Me.ImgFamiliar)
         Me.Controls.Add(Me.LabelTitulo)
         Me.Name = "Form3"
@@ -221,6 +225,7 @@ Partial Class Form3
     Friend WithEvents ImgFamiliar As PictureBox
     Friend WithEvents BotonCancelar As Button
     Friend WithEvents BotonContinuar As Button
+    Friend WithEvents ComboOpciones As ComboBox
     Friend WithEvents GrupoPrecios As GroupBox
     Friend WithEvents TextoSemana As TextBox
     Friend WithEvents TextoDia As TextBox
@@ -230,5 +235,4 @@ Partial Class Form3
     Friend WithEvents LabelPrecioHora As Label
     Friend WithEvents LabelPrecioMes As Label
     Friend WithEvents LabelPrecioDia As Label
-    Friend WithEvents ComboOpciones As ComboBox
 End Class

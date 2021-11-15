@@ -23,6 +23,8 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GrupoDetallesConductor = New System.Windows.Forms.GroupBox()
+        Me.LabelTelefono = New System.Windows.Forms.Label()
+        Me.TextoTelefono = New System.Windows.Forms.TextBox()
         Me.TextoNombre = New System.Windows.Forms.TextBox()
         Me.TextoEdad = New System.Windows.Forms.TextBox()
         Me.LabelNacionalidad = New System.Windows.Forms.Label()
@@ -61,9 +63,7 @@ Partial Class Form5
         Me.LabelLugarRetiro = New System.Windows.Forms.Label()
         Me.BotonReservar = New System.Windows.Forms.Button()
         Me.BotonCancelar = New System.Windows.Forms.Button()
-        Me.LabelTelefono = New System.Windows.Forms.Label()
-        Me.TextoTelefono = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BotonLimpiar = New System.Windows.Forms.Button()
         Me.GrupoDetallesConductor.SuspendLayout()
         Me.GrupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
@@ -97,6 +97,24 @@ Partial Class Form5
         Me.GrupoDetallesConductor.TabIndex = 0
         Me.GrupoDetallesConductor.TabStop = False
         Me.GrupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
+        '
+        'LabelTelefono
+        '
+        Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelTelefono.Location = New System.Drawing.Point(603, 123)
+        Me.LabelTelefono.Name = "LabelTelefono"
+        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
+        Me.LabelTelefono.TabIndex = 51
+        Me.LabelTelefono.Text = "TEL."
+        '
+        'TextoTelefono
+        '
+        Me.TextoTelefono.BackColor = System.Drawing.Color.Silver
+        Me.TextoTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.TextoTelefono.Location = New System.Drawing.Point(695, 120)
+        Me.TextoTelefono.Name = "TextoTelefono"
+        Me.TextoTelefono.Size = New System.Drawing.Size(133, 26)
+        Me.TextoTelefono.TabIndex = 52
         '
         'TextoNombre
         '
@@ -504,34 +522,16 @@ Partial Class Form5
         Me.BotonCancelar.Text = "CANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
         '
-        'LabelTelefono
+        'BotonLimpiar
         '
-        Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelTelefono.Location = New System.Drawing.Point(603, 123)
-        Me.LabelTelefono.Name = "LabelTelefono"
-        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
-        Me.LabelTelefono.TabIndex = 51
-        Me.LabelTelefono.Text = "TEL."
-        '
-        'TextoTelefono
-        '
-        Me.TextoTelefono.BackColor = System.Drawing.Color.Silver
-        Me.TextoTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TextoTelefono.Location = New System.Drawing.Point(695, 120)
-        Me.TextoTelefono.Name = "TextoTelefono"
-        Me.TextoTelefono.Size = New System.Drawing.Size(133, 26)
-        Me.TextoTelefono.TabIndex = 52
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(343, 478)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(243, 71)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "LIMPIAR"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BotonLimpiar.BackColor = System.Drawing.Color.White
+        Me.BotonLimpiar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.BotonLimpiar.Location = New System.Drawing.Point(343, 478)
+        Me.BotonLimpiar.Name = "BotonLimpiar"
+        Me.BotonLimpiar.Size = New System.Drawing.Size(243, 71)
+        Me.BotonLimpiar.TabIndex = 5
+        Me.BotonLimpiar.Text = "LIMPIAR"
+        Me.BotonLimpiar.UseVisualStyleBackColor = False
         '
         'Form5
         '
@@ -539,7 +539,7 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(884, 561)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BotonLimpiar)
         Me.Controls.Add(Me.BotonCancelar)
         Me.Controls.Add(Me.BotonReservar)
         Me.Controls.Add(Me.GrupoDatosReserva)
@@ -602,5 +602,5 @@ Partial Class Form5
     Friend WithEvents LabelMetodoPago As Label
     Friend WithEvents LabelTelefono As Label
     Friend WithEvents TextoTelefono As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BotonLimpiar As Button
 End Class
