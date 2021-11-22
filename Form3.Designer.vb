@@ -24,7 +24,7 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
-        Me.ComboOpciones = New System.Windows.Forms.ComboBox()
+        Me.ComboMFamiliar = New System.Windows.Forms.ComboBox()
         Me.GrupoPrecios = New System.Windows.Forms.GroupBox()
         Me.TextoSemana = New System.Windows.Forms.TextBox()
         Me.TextoDia = New System.Windows.Forms.TextBox()
@@ -34,8 +34,8 @@ Partial Class Form3
         Me.LabelPrecioHora = New System.Windows.Forms.Label()
         Me.LabelPrecioMes = New System.Windows.Forms.Label()
         Me.LabelPrecioDia = New System.Windows.Forms.Label()
-        Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.ImgFamiliar = New System.Windows.Forms.PictureBox()
+        Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.GrupoPrecios.SuspendLayout()
         CType(Me.ImgFamiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,9 +45,9 @@ Partial Class Form3
         Me.BotonCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.BotonCancelar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BotonCancelar.ForeColor = System.Drawing.Color.White
-        Me.BotonCancelar.Location = New System.Drawing.Point(75, 475)
+        Me.BotonCancelar.Location = New System.Drawing.Point(125, 475)
         Me.BotonCancelar.Name = "BotonCancelar"
-        Me.BotonCancelar.Size = New System.Drawing.Size(300, 50)
+        Me.BotonCancelar.Size = New System.Drawing.Size(200, 50)
         Me.BotonCancelar.TabIndex = 18
         Me.BotonCancelar.Text = "C&ANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
@@ -57,27 +57,26 @@ Partial Class Form3
         Me.BotonContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.BotonContinuar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BotonContinuar.ForeColor = System.Drawing.Color.White
-        Me.BotonContinuar.Location = New System.Drawing.Point(75, 400)
+        Me.BotonContinuar.Location = New System.Drawing.Point(125, 400)
         Me.BotonContinuar.Name = "BotonContinuar"
-        Me.BotonContinuar.Size = New System.Drawing.Size(300, 50)
+        Me.BotonContinuar.Size = New System.Drawing.Size(200, 50)
         Me.BotonContinuar.TabIndex = 17
         Me.BotonContinuar.Text = "&CONTINUAR"
         Me.BotonContinuar.UseVisualStyleBackColor = False
         '
-        'ComboOpciones
+        'ComboMFamiliar
         '
-        Me.ComboOpciones.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
-        Me.ComboOpciones.AllowDrop = True
-        Me.ComboOpciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
-        Me.ComboOpciones.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.ComboOpciones.ForeColor = System.Drawing.Color.Black
-        Me.ComboOpciones.FormattingEnabled = True
-        Me.ComboOpciones.Items.AddRange(New Object() {"Hyundai Accent", "Hyundai Elantra", "Hyundai Grand i10", "Hyundai Tucson", "Hyundai Santa Fe", "Kia Rio", "Kia Cerato", "Kia Optima", "Kia Carnival", "Kia Sportage"})
-        Me.ComboOpciones.Location = New System.Drawing.Point(75, 350)
-        Me.ComboOpciones.Name = "ComboOpciones"
-        Me.ComboOpciones.Size = New System.Drawing.Size(300, 34)
-        Me.ComboOpciones.TabIndex = 19
-        Me.ComboOpciones.Text = "SELECCIONE UN MODELO"
+        Me.ComboMFamiliar.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.ComboMFamiliar.AllowDrop = True
+        Me.ComboMFamiliar.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.ComboMFamiliar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.ComboMFamiliar.ForeColor = System.Drawing.Color.Black
+        Me.ComboMFamiliar.FormattingEnabled = True
+        Me.ComboMFamiliar.Location = New System.Drawing.Point(75, 350)
+        Me.ComboMFamiliar.Name = "ComboMFamiliar"
+        Me.ComboMFamiliar.Size = New System.Drawing.Size(300, 34)
+        Me.ComboMFamiliar.TabIndex = 19
+        Me.ComboMFamiliar.Text = "SELECCIONE UN MODELO"
         '
         'GrupoPrecios
         '
@@ -179,25 +178,6 @@ Partial Class Form3
         Me.LabelPrecioDia.Text = "&X DÍA"
         Me.LabelPrecioDia.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'LabelTitulo
-        '
-        Me.LabelTitulo.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
-        Me.LabelTitulo.Cursor = System.Windows.Forms.Cursors.Default
-        Me.LabelTitulo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LabelTitulo.Enabled = False
-        Me.LabelTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LabelTitulo.Font = New System.Drawing.Font("Candara", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTitulo.Location = New System.Drawing.Point(0, 0)
-        Me.LabelTitulo.Margin = New System.Windows.Forms.Padding(0)
-        Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.Padding = New System.Windows.Forms.Padding(0, 15, 0, 15)
-        Me.LabelTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.LabelTitulo.Size = New System.Drawing.Size(884, 90)
-        Me.LabelTitulo.TabIndex = 1
-        Me.LabelTitulo.Text = "TARIFAS PARA MODELOS FAMILIARES"
-        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'ImgFamiliar
         '
         Me.ImgFamiliar.Image = Global.Tarea.My.Resources.Resources.familiar2
@@ -208,6 +188,21 @@ Partial Class Form3
         Me.ImgFamiliar.TabIndex = 11
         Me.ImgFamiliar.TabStop = False
         '
+        'LabelTitulo
+        '
+        Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
+        Me.LabelTitulo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LabelTitulo.Font = New System.Drawing.Font("Candara", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.LabelTitulo.Margin = New System.Windows.Forms.Padding(10)
+        Me.LabelTitulo.Name = "LabelTitulo"
+        Me.LabelTitulo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelTitulo.Size = New System.Drawing.Size(884, 75)
+        Me.LabelTitulo.TabIndex = 24
+        Me.LabelTitulo.Text = "TARIFAS PARA MODELOS FAMILIARES"
+        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -216,7 +211,7 @@ Partial Class Form3
         Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.LabelTitulo)
         Me.Controls.Add(Me.GrupoPrecios)
-        Me.Controls.Add(Me.ComboOpciones)
+        Me.Controls.Add(Me.ComboMFamiliar)
         Me.Controls.Add(Me.BotonCancelar)
         Me.Controls.Add(Me.BotonContinuar)
         Me.Controls.Add(Me.ImgFamiliar)
@@ -232,7 +227,7 @@ Partial Class Form3
     Friend WithEvents ImgFamiliar As PictureBox
     Friend WithEvents BotonCancelar As Button
     Friend WithEvents BotonContinuar As Button
-    Friend WithEvents ComboOpciones As ComboBox
+    Friend WithEvents ComboMFamiliar As ComboBox
     Friend WithEvents GrupoPrecios As GroupBox
     Friend WithEvents TextoSemana As TextBox
     Friend WithEvents TextoDia As TextBox

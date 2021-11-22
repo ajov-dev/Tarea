@@ -96,9 +96,9 @@ Partial Class Form6
         Me.GrupoReservacion.Controls.Add(Me.TextoLicencia)
         Me.GrupoReservacion.Controls.Add(Me.LabelNombre)
         Me.GrupoReservacion.Font = New System.Drawing.Font("Candara", 20.25!, System.Drawing.FontStyle.Bold)
-        Me.GrupoReservacion.Location = New System.Drawing.Point(12, 11)
+        Me.GrupoReservacion.Location = New System.Drawing.Point(10, 10)
         Me.GrupoReservacion.Name = "GrupoReservacion"
-        Me.GrupoReservacion.Size = New System.Drawing.Size(860, 161)
+        Me.GrupoReservacion.Size = New System.Drawing.Size(862, 160)
         Me.GrupoReservacion.TabIndex = 5
         Me.GrupoReservacion.TabStop = False
         Me.GrupoReservacion.Text = "DETALLES DEL CONDUCTOR"
@@ -117,7 +117,7 @@ Partial Class Form6
         '
         'TextoTelefono
         '
-        Me.TextoTelefono.BackColor = System.Drawing.Color.Silver
+        Me.TextoTelefono.BackColor = System.Drawing.Color.White
         Me.TextoTelefono.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoTelefono.Location = New System.Drawing.Point(674, 76)
         Me.TextoTelefono.Name = "TextoTelefono"
@@ -126,7 +126,7 @@ Partial Class Form6
         '
         'TextoNombre
         '
-        Me.TextoNombre.BackColor = System.Drawing.Color.Silver
+        Me.TextoNombre.BackColor = System.Drawing.Color.White
         Me.TextoNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoNombre.Location = New System.Drawing.Point(136, 39)
         Me.TextoNombre.Name = "TextoNombre"
@@ -135,7 +135,7 @@ Partial Class Form6
         '
         'TextoEdad
         '
-        Me.TextoEdad.BackColor = System.Drawing.Color.Silver
+        Me.TextoEdad.BackColor = System.Drawing.Color.White
         Me.TextoEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoEdad.Location = New System.Drawing.Point(674, 39)
         Me.TextoEdad.Name = "TextoEdad"
@@ -168,7 +168,7 @@ Partial Class Form6
         '
         'TextoCedula
         '
-        Me.TextoCedula.BackColor = System.Drawing.Color.Silver
+        Me.TextoCedula.BackColor = System.Drawing.Color.White
         Me.TextoCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoCedula.Location = New System.Drawing.Point(136, 113)
         Me.TextoCedula.Name = "TextoCedula"
@@ -177,7 +177,7 @@ Partial Class Form6
         '
         'TextoDireccion
         '
-        Me.TextoDireccion.BackColor = System.Drawing.Color.Silver
+        Me.TextoDireccion.BackColor = System.Drawing.Color.White
         Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoDireccion.Location = New System.Drawing.Point(438, 113)
         Me.TextoDireccion.Name = "TextoDireccion"
@@ -222,7 +222,7 @@ Partial Class Form6
         '
         'TextoApellido
         '
-        Me.TextoApellido.BackColor = System.Drawing.Color.Silver
+        Me.TextoApellido.BackColor = System.Drawing.Color.White
         Me.TextoApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoApellido.Location = New System.Drawing.Point(136, 76)
         Me.TextoApellido.Name = "TextoApellido"
@@ -243,7 +243,7 @@ Partial Class Form6
         '
         'TextoNacionalidad
         '
-        Me.TextoNacionalidad.BackColor = System.Drawing.Color.Silver
+        Me.TextoNacionalidad.BackColor = System.Drawing.Color.White
         Me.TextoNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoNacionalidad.Location = New System.Drawing.Point(438, 39)
         Me.TextoNacionalidad.Name = "TextoNacionalidad"
@@ -252,7 +252,7 @@ Partial Class Form6
         '
         'TextoLicencia
         '
-        Me.TextoLicencia.BackColor = System.Drawing.Color.Silver
+        Me.TextoLicencia.BackColor = System.Drawing.Color.White
         Me.TextoLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoLicencia.Location = New System.Drawing.Point(438, 76)
         Me.TextoLicencia.Name = "TextoLicencia"
@@ -293,16 +293,17 @@ Partial Class Form6
         Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label1)
         Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label12)
         Me.GrupoDatosDelVehiculo.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.GrupoDatosDelVehiculo.Location = New System.Drawing.Point(12, 178)
+        Me.GrupoDatosDelVehiculo.Location = New System.Drawing.Point(10, 180)
         Me.GrupoDatosDelVehiculo.Name = "GrupoDatosDelVehiculo"
-        Me.GrupoDatosDelVehiculo.Size = New System.Drawing.Size(860, 294)
+        Me.GrupoDatosDelVehiculo.Size = New System.Drawing.Size(862, 300)
         Me.GrupoDatosDelVehiculo.TabIndex = 6
         Me.GrupoDatosDelVehiculo.TabStop = False
         Me.GrupoDatosDelVehiculo.Text = "DATOS DEL VEHICULO ALQUILADO"
         '
         'TextBox15
         '
-        Me.TextBox15.BackColor = System.Drawing.Color.Silver
+        Me.TextBox15.BackColor = System.Drawing.Color.White
+        Me.TextBox15.Enabled = False
         Me.TextBox15.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox15.Location = New System.Drawing.Point(636, 214)
         Me.TextBox15.Name = "TextBox15"
@@ -311,7 +312,8 @@ Partial Class Form6
         '
         'TextBox14
         '
-        Me.TextBox14.BackColor = System.Drawing.Color.Silver
+        Me.TextBox14.BackColor = System.Drawing.Color.White
+        Me.TextBox14.Enabled = False
         Me.TextBox14.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox14.Location = New System.Drawing.Point(637, 128)
         Me.TextBox14.Name = "TextBox14"
@@ -320,7 +322,8 @@ Partial Class Form6
         '
         'TextBox13
         '
-        Me.TextBox13.BackColor = System.Drawing.Color.Silver
+        Me.TextBox13.BackColor = System.Drawing.Color.White
+        Me.TextBox13.Enabled = False
         Me.TextBox13.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox13.Location = New System.Drawing.Point(637, 76)
         Me.TextBox13.Name = "TextBox13"
@@ -329,7 +332,8 @@ Partial Class Form6
         '
         'TextBox12
         '
-        Me.TextBox12.BackColor = System.Drawing.Color.Silver
+        Me.TextBox12.BackColor = System.Drawing.Color.White
+        Me.TextBox12.Enabled = False
         Me.TextBox12.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox12.Location = New System.Drawing.Point(637, 30)
         Me.TextBox12.Name = "TextBox12"
@@ -338,7 +342,8 @@ Partial Class Form6
         '
         'TextBox11
         '
-        Me.TextBox11.BackColor = System.Drawing.Color.Silver
+        Me.TextBox11.BackColor = System.Drawing.Color.White
+        Me.TextBox11.Enabled = False
         Me.TextBox11.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox11.Location = New System.Drawing.Point(189, 214)
         Me.TextBox11.Name = "TextBox11"
@@ -347,7 +352,8 @@ Partial Class Form6
         '
         'TextBox10
         '
-        Me.TextBox10.BackColor = System.Drawing.Color.Silver
+        Me.TextBox10.BackColor = System.Drawing.Color.White
+        Me.TextBox10.Enabled = False
         Me.TextBox10.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox10.Location = New System.Drawing.Point(189, 171)
         Me.TextBox10.Name = "TextBox10"
@@ -356,7 +362,8 @@ Partial Class Form6
         '
         'TextBox8
         '
-        Me.TextBox8.BackColor = System.Drawing.Color.Silver
+        Me.TextBox8.BackColor = System.Drawing.Color.White
+        Me.TextBox8.Enabled = False
         Me.TextBox8.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox8.Location = New System.Drawing.Point(189, 128)
         Me.TextBox8.Name = "TextBox8"
@@ -365,7 +372,8 @@ Partial Class Form6
         '
         'TextBox7
         '
-        Me.TextBox7.BackColor = System.Drawing.Color.Silver
+        Me.TextBox7.BackColor = System.Drawing.Color.White
+        Me.TextBox7.Enabled = False
         Me.TextBox7.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox7.Location = New System.Drawing.Point(189, 85)
         Me.TextBox7.Name = "TextBox7"
@@ -374,7 +382,8 @@ Partial Class Form6
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.Silver
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(189, 42)
         Me.TextBox1.Name = "TextBox1"
@@ -509,7 +518,7 @@ Partial Class Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BotonCancelar)

@@ -1,18 +1,25 @@
 ﻿Public Class Form4
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Dim ElementosArray2 = New String() {"Hyundai Accent", "Hyundai Elantra", "Hyundai Grand I-10", "Hyundai Tucson", "Hyundai Santa Fe", "Kia Rio", "Kia Cerato", "Kia Optima", "Kia Carnival", "Kia Sportage"}
+        ComboMLujo.Items.Add(ElementosArray2(0))
+        ComboMLujo.Items.Add(ElementosArray2(1))
+        ComboMLujo.Items.Add(ElementosArray2(2))
+        ComboMLujo.Items.Add(ElementosArray2(3))
+        ComboMLujo.Items.Add(ElementosArray2(4))
+        ComboMLujo.Items.Add(ElementosArray2(5))
+        ComboMLujo.Items.Add(ElementosArray2(6))
+        ComboMLujo.Items.Add(ElementosArray2(7))
+        ComboMLujo.Items.Add(ElementosArray2(8))
+        ComboMLujo.Items.Add(ElementosArray2(9))
     End Sub
+    Private Sub ComboModelos_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboMLujo.SelectedIndexChanged
 
-    ReadOnly SignoDeBalboa = "Bl/. "
-    Dim VPrecioHora
-    Dim VPrecioDia
-    Dim VPrecioSemana
-    Dim VPrecioMes
-
-
-    Private Sub ComboModelos_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-        Select Case ComboModelos.SelectedIndex
+        Dim SignoDeBalboa = "Bl/. "
+        Dim VPrecioHora
+        Dim VPrecioDia
+        Dim VPrecioSemana
+        Dim VPrecioMes
+        Select Case ComboMLujo.SelectedIndex
             Case 0
                 VPrecioHora = 10
                 VPrecioDia = 100
@@ -65,22 +72,21 @@
                 VPrecioMes = 10009
         End Select
 
+#Disable Warning BC42104 ' Variable is used before it has been assigned a value
         TextoHora.Text = SignoDeBalboa & VPrecioHora
         TextoDia.Text = SignoDeBalboa & VPrecioDia
         TextoSemana.Text = SignoDeBalboa & VPrecioSemana
         TextoMes.Text = SignoDeBalboa & VPrecioMes
-
+#Enable Warning BC42104 ' Variable is used before it has been assigned a value
     End Sub
 
-
-    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs)
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
         Form5.Show()
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    Private Sub BotonCancelar_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
         Dispose()
-        TextoHora.Text = ""
-        TextoDia.Text = ""
-        TextoSemana.Text = ""
-        TextoMes.Text = ""
+
     End Sub
+
 End Class

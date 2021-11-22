@@ -3,7 +3,15 @@
 
     End Sub
 
-    Private Sub BotonLimpiar_Click(sender As Object, e As EventArgs)
+    Private Sub BotonCancelar_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
+        Dispose()
+    End Sub
+
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
+        Form6.Show()
+    End Sub
+
+    Private Sub BotonLimpiar_Click_1(sender As Object, e As EventArgs) Handles BotonLimpiar.Click
         TextoApellido.Clear()
         TextoCedula.Clear()
         TextoDireccion.Clear()
@@ -16,4 +24,5 @@
         RadioTarifaElegidaDias.Checked = False
         RadioTarifaElegidaHoras.Checked = False
     End Sub
+
 End Class
