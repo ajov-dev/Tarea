@@ -59,10 +59,11 @@ Partial Class Form5
         Me.RadioTipoVehiculoFamiliar = New System.Windows.Forms.RadioButton()
         Me.ComboSucursales = New System.Windows.Forms.ComboBox()
         Me.LabelModeloVehiculo = New System.Windows.Forms.Label()
-        Me.ComboModeloOpciones = New System.Windows.Forms.ComboBox()
+        Me.ComboMVehiculos = New System.Windows.Forms.ComboBox()
         Me.LabelLugarRetiro = New System.Windows.Forms.Label()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
+        Me.BotonLimpiar = New System.Windows.Forms.Button()
         Me.GrupoDetallesConductor.SuspendLayout()
         Me.GrupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
@@ -90,9 +91,9 @@ Partial Class Form5
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoLicencia)
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelNombre)
         Me.GrupoDetallesConductor.Font = New System.Drawing.Font("Candara", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrupoDetallesConductor.Location = New System.Drawing.Point(12, 12)
+        Me.GrupoDetallesConductor.Location = New System.Drawing.Point(10, 10)
         Me.GrupoDetallesConductor.Name = "GrupoDetallesConductor"
-        Me.GrupoDetallesConductor.Size = New System.Drawing.Size(860, 161)
+        Me.GrupoDetallesConductor.Size = New System.Drawing.Size(860, 160)
         Me.GrupoDetallesConductor.TabIndex = 0
         Me.GrupoDetallesConductor.TabStop = False
         Me.GrupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
@@ -248,12 +249,12 @@ Partial Class Form5
         Me.GrupoDatosReserva.Controls.Add(Me.GrupoTipoAuto)
         Me.GrupoDatosReserva.Controls.Add(Me.ComboSucursales)
         Me.GrupoDatosReserva.Controls.Add(Me.LabelModeloVehiculo)
-        Me.GrupoDatosReserva.Controls.Add(Me.ComboModeloOpciones)
+        Me.GrupoDatosReserva.Controls.Add(Me.ComboMVehiculos)
         Me.GrupoDatosReserva.Controls.Add(Me.LabelLugarRetiro)
         Me.GrupoDatosReserva.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrupoDatosReserva.Location = New System.Drawing.Point(12, 179)
+        Me.GrupoDatosReserva.Location = New System.Drawing.Point(10, 180)
         Me.GrupoDatosReserva.Name = "GrupoDatosReserva"
-        Me.GrupoDatosReserva.Size = New System.Drawing.Size(860, 294)
+        Me.GrupoDatosReserva.Size = New System.Drawing.Size(860, 300)
         Me.GrupoDatosReserva.TabIndex = 1
         Me.GrupoDatosReserva.TabStop = False
         Me.GrupoDatosReserva.Text = "DATOS DE RESERVA"
@@ -282,6 +283,7 @@ Partial Class Form5
         Me.ComboMetodoPago.BackColor = System.Drawing.Color.Silver
         Me.ComboMetodoPago.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboMetodoPago.FormattingEnabled = True
+        Me.ComboMetodoPago.Items.AddRange(New Object() {"EFECTIVO", "TARJETA DE CREDITO", "TRANSFERENCIA BANCARIA", "YAPPY", "NEQUI"})
         Me.ComboMetodoPago.Location = New System.Drawing.Point(6, 233)
         Me.ComboMetodoPago.Name = "ComboMetodoPago"
         Me.ComboMetodoPago.Size = New System.Drawing.Size(324, 31)
@@ -439,10 +441,9 @@ Partial Class Form5
         '
         'RadioTipoVehiculoLujo
         '
-        Me.RadioTipoVehiculoLujo.AutoSize = True
-        Me.RadioTipoVehiculoLujo.Location = New System.Drawing.Point(187, 36)
+        Me.RadioTipoVehiculoLujo.Location = New System.Drawing.Point(170, 30)
         Me.RadioTipoVehiculoLujo.Name = "RadioTipoVehiculoLujo"
-        Me.RadioTipoVehiculoLujo.Size = New System.Drawing.Size(71, 27)
+        Me.RadioTipoVehiculoLujo.Size = New System.Drawing.Size(150, 50)
         Me.RadioTipoVehiculoLujo.TabIndex = 1
         Me.RadioTipoVehiculoLujo.TabStop = True
         Me.RadioTipoVehiculoLujo.Text = "LUJO"
@@ -450,10 +451,9 @@ Partial Class Form5
         '
         'RadioTipoVehiculoFamiliar
         '
-        Me.RadioTipoVehiculoFamiliar.AutoSize = True
-        Me.RadioTipoVehiculoFamiliar.Location = New System.Drawing.Point(74, 36)
+        Me.RadioTipoVehiculoFamiliar.Location = New System.Drawing.Point(10, 30)
         Me.RadioTipoVehiculoFamiliar.Name = "RadioTipoVehiculoFamiliar"
-        Me.RadioTipoVehiculoFamiliar.Size = New System.Drawing.Size(107, 27)
+        Me.RadioTipoVehiculoFamiliar.Size = New System.Drawing.Size(150, 50)
         Me.RadioTipoVehiculoFamiliar.TabIndex = 0
         Me.RadioTipoVehiculoFamiliar.TabStop = True
         Me.RadioTipoVehiculoFamiliar.Text = "FAMILIAR"
@@ -480,16 +480,16 @@ Partial Class Form5
         Me.LabelModeloVehiculo.TabIndex = 18
         Me.LabelModeloVehiculo.Text = "MODELO DEL VEHICULO"
         '
-        'ComboModeloOpciones
+        'ComboMVehiculos
         '
-        Me.ComboModeloOpciones.BackColor = System.Drawing.Color.Silver
-        Me.ComboModeloOpciones.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboModeloOpciones.FormattingEnabled = True
-        Me.ComboModeloOpciones.Location = New System.Drawing.Point(16, 153)
-        Me.ComboModeloOpciones.Name = "ComboModeloOpciones"
-        Me.ComboModeloOpciones.Size = New System.Drawing.Size(232, 31)
-        Me.ComboModeloOpciones.TabIndex = 19
-        Me.ComboModeloOpciones.Text = "SELECCIONE EL MODELO"
+        Me.ComboMVehiculos.BackColor = System.Drawing.Color.Silver
+        Me.ComboMVehiculos.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboMVehiculos.FormattingEnabled = True
+        Me.ComboMVehiculos.Location = New System.Drawing.Point(16, 153)
+        Me.ComboMVehiculos.Name = "ComboMVehiculos"
+        Me.ComboMVehiculos.Size = New System.Drawing.Size(324, 31)
+        Me.ComboMVehiculos.TabIndex = 19
+        Me.ComboMVehiculos.Text = "SELECCIONE EL MODELO"
         '
         'LabelLugarRetiro
         '
@@ -508,7 +508,7 @@ Partial Class Form5
         Me.BotonCancelar.ForeColor = System.Drawing.Color.White
         Me.BotonCancelar.Location = New System.Drawing.Point(100, 500)
         Me.BotonCancelar.Name = "BotonCancelar"
-        Me.BotonCancelar.Size = New System.Drawing.Size(250, 50)
+        Me.BotonCancelar.Size = New System.Drawing.Size(200, 50)
         Me.BotonCancelar.TabIndex = 55
         Me.BotonCancelar.Text = "C&ANCELAR"
         Me.BotonCancelar.UseVisualStyleBackColor = False
@@ -518,12 +518,24 @@ Partial Class Form5
         Me.BotonContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.BotonContinuar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BotonContinuar.ForeColor = System.Drawing.Color.White
-        Me.BotonContinuar.Location = New System.Drawing.Point(500, 500)
+        Me.BotonContinuar.Location = New System.Drawing.Point(600, 500)
         Me.BotonContinuar.Name = "BotonContinuar"
-        Me.BotonContinuar.Size = New System.Drawing.Size(250, 50)
+        Me.BotonContinuar.Size = New System.Drawing.Size(200, 50)
         Me.BotonContinuar.TabIndex = 54
         Me.BotonContinuar.Text = "&CONTINUAR"
         Me.BotonContinuar.UseVisualStyleBackColor = False
+        '
+        'BotonLimpiar
+        '
+        Me.BotonLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.BotonLimpiar.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonLimpiar.ForeColor = System.Drawing.Color.White
+        Me.BotonLimpiar.Location = New System.Drawing.Point(350, 499)
+        Me.BotonLimpiar.Name = "BotonLimpiar"
+        Me.BotonLimpiar.Size = New System.Drawing.Size(200, 50)
+        Me.BotonLimpiar.TabIndex = 56
+        Me.BotonLimpiar.Text = "L&IMPIAR"
+        Me.BotonLimpiar.UseVisualStyleBackColor = False
         '
         'Form5
         '
@@ -531,6 +543,7 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(884, 561)
+        Me.Controls.Add(Me.BotonLimpiar)
         Me.Controls.Add(Me.GrupoDatosReserva)
         Me.Controls.Add(Me.BotonCancelar)
         Me.Controls.Add(Me.GrupoDetallesConductor)
@@ -547,7 +560,6 @@ Partial Class Form5
         Me.GrupoTarifaElegida.ResumeLayout(False)
         Me.GrupoTarifaElegida.PerformLayout()
         Me.GrupoTipoAuto.ResumeLayout(False)
-        Me.GrupoTipoAuto.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -584,7 +596,7 @@ Partial Class Form5
     Friend WithEvents ComboFechaRetiroMes As ComboBox
     Friend WithEvents ComboFechaRetiroDia As ComboBox
     Friend WithEvents LabelFechaRetiro As Label
-    Friend WithEvents ComboModeloOpciones As ComboBox
+    Friend WithEvents ComboMVehiculos As ComboBox
     Friend WithEvents LabelModeloVehiculo As Label
     Friend WithEvents TextoNombre As TextBox
     Friend WithEvents ComboMetodoPago As ComboBox
@@ -593,4 +605,5 @@ Partial Class Form5
     Friend WithEvents TextoTelefono As TextBox
     Friend WithEvents BotonCancelar As Button
     Friend WithEvents BotonContinuar As Button
+    Friend WithEvents BotonLimpiar As Button
 End Class

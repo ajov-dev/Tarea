@@ -1,14 +1,34 @@
 ﻿Public Class Form3
-    ReadOnly SignoDeBalboa = "Bl/. "
-    Dim VPrecioHora
-    Dim VPrecioDia
-    Dim VPrecioSemana
-    Dim VPrecioMes
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim ElementosArray1 = New String() {"Koenigsegg", "Lamborghini", "W Motors", "Bugatti", "Ferrari", "Aston Martin", "Pagani", "Maybach", "Porsche", "Bentley"}
+
+        ComboMFamiliar.Items.Add(ElementosArray1(0))
+        ComboMFamiliar.Items.Add(ElementosArray1(1))
+        ComboMFamiliar.Items.Add(ElementosArray1(2))
+        ComboMFamiliar.Items.Add(ElementosArray1(3))
+        ComboMFamiliar.Items.Add(ElementosArray1(4))
+        ComboMFamiliar.Items.Add(ElementosArray1(5))
+        ComboMFamiliar.Items.Add(ElementosArray1(6))
+        ComboMFamiliar.Items.Add(ElementosArray1(7))
+        ComboMFamiliar.Items.Add(ElementosArray1(8))
+        ComboMFamiliar.Items.Add(ElementosArray1(9))
     End Sub
 
-    Private Sub ComboOpciones_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboOpciones.SelectedIndexChanged
-        Select Case ComboOpciones.SelectedIndex
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
+        Form5.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
+        Dispose()
+    End Sub
+
+    Private Sub ComboMFamiliar_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboMFamiliar.SelectedIndexChanged
+        Dim SignoDeBalboa = "Bl/. "
+        Dim VPrecioHora
+        Dim VPrecioDia
+        Dim VPrecioSemana
+        Dim VPrecioMes
+        Select Case ComboMFamiliar.SelectedIndex
             Case 0
                 VPrecioHora = 10
                 VPrecioDia = 100
@@ -60,16 +80,12 @@
                 VPrecioSemana = 1009
                 VPrecioMes = 10009
         End Select
+#Disable Warning BC42104 ' Variable is used before it has been assigned a value
         TextoHora.Text = SignoDeBalboa & VPrecioHora
         TextoDia.Text = SignoDeBalboa & VPrecioDia
         TextoSemana.Text = SignoDeBalboa & VPrecioSemana
         TextoMes.Text = SignoDeBalboa & VPrecioMes
-    End Sub
-    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
-        Form5.Show()
+#Enable Warning BC42104 ' Variable is used before it has been assigned a value
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
-        Dispose()
-    End Sub
 End Class
