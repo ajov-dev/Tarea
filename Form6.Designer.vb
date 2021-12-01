@@ -305,7 +305,7 @@ Partial Class Form6
         Me.TextBox15.BackColor = System.Drawing.Color.White
         Me.TextBox15.Enabled = False
         Me.TextBox15.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.Location = New System.Drawing.Point(636, 214)
+        Me.TextBox15.Location = New System.Drawing.Point(635, 214)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(149, 31)
         Me.TextBox15.TabIndex = 42
@@ -315,7 +315,7 @@ Partial Class Form6
         Me.TextBox14.BackColor = System.Drawing.Color.White
         Me.TextBox14.Enabled = False
         Me.TextBox14.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox14.Location = New System.Drawing.Point(637, 128)
+        Me.TextBox14.Location = New System.Drawing.Point(635, 128)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(149, 31)
         Me.TextBox14.TabIndex = 41
@@ -325,7 +325,7 @@ Partial Class Form6
         Me.TextBox13.BackColor = System.Drawing.Color.White
         Me.TextBox13.Enabled = False
         Me.TextBox13.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(637, 76)
+        Me.TextBox13.Location = New System.Drawing.Point(635, 85)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(149, 31)
         Me.TextBox13.TabIndex = 40
@@ -335,7 +335,7 @@ Partial Class Form6
         Me.TextBox12.BackColor = System.Drawing.Color.White
         Me.TextBox12.Enabled = False
         Me.TextBox12.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(637, 30)
+        Me.TextBox12.Location = New System.Drawing.Point(636, 42)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(148, 31)
         Me.TextBox12.TabIndex = 39

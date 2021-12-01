@@ -36,7 +36,7 @@ Partial Class Form4
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LabelTitulo = New System.Windows.Forms.Label()
+
         Me.GrupoPrecios.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
