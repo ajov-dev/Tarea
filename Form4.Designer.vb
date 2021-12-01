@@ -195,7 +195,7 @@ Partial Class Form4
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Tarea.My.Resources.Resources.lujo1
+        Me.PictureBox1.Image = Global.Tarea.My.Resources.Resources.lujo2
         Me.PictureBox1.Location = New System.Drawing.Point(25, 100)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(400, 225)
