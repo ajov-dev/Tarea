@@ -79,7 +79,7 @@ Partial Class Form2
         '
         'ImgLujo
         '
-        Me.ImgLujo.Image = Global.Tarea.My.Resources.Resources.lujo2
+        Me.ImgLujo.Image = Global.Tarea.My.Resources.Resources.lujo
         Me.ImgLujo.Location = New System.Drawing.Point(10, 75)
         Me.ImgLujo.Name = "ImgLujo"
         Me.ImgLujo.Size = New System.Drawing.Size(400, 225)
