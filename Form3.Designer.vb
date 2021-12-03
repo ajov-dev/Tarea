@@ -34,8 +34,8 @@ Partial Class Form3
         Me.LabelPrecioHora = New System.Windows.Forms.Label()
         Me.LabelPrecioMes = New System.Windows.Forms.Label()
         Me.LabelPrecioDia = New System.Windows.Forms.Label()
-        Me.ImgFamiliar = New System.Windows.Forms.PictureBox()
         Me.LabelTitulo = New System.Windows.Forms.Label()
+        Me.ImgFamiliar = New System.Windows.Forms.PictureBox()
         Me.GrupoPrecios.SuspendLayout()
         CType(Me.ImgFamiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -128,6 +128,7 @@ Partial Class Form3
         'TextoHora
         '
         Me.TextoHora.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.TextoHora.HideSelection = False
         Me.TextoHora.Location = New System.Drawing.Point(37, 90)
         Me.TextoHora.Name = "TextoHora"
         Me.TextoHora.Size = New System.Drawing.Size(100, 31)
@@ -178,16 +179,6 @@ Partial Class Form3
         Me.LabelPrecioDia.Text = "&X DÍA"
         Me.LabelPrecioDia.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ImgFamiliar
-        '
-        Me.ImgFamiliar.Image = Global.Tarea.My.Resources.Resources.familiar2
-        Me.ImgFamiliar.Location = New System.Drawing.Point(25, 100)
-        Me.ImgFamiliar.Name = "ImgFamiliar"
-        Me.ImgFamiliar.Size = New System.Drawing.Size(400, 225)
-        Me.ImgFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ImgFamiliar.TabIndex = 11
-        Me.ImgFamiliar.TabStop = False
-        '
         'LabelTitulo
         '
         Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
@@ -202,6 +193,16 @@ Partial Class Form3
         Me.LabelTitulo.TabIndex = 24
         Me.LabelTitulo.Text = "TARIFAS PARA MODELOS FAMILIARES"
         Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ImgFamiliar
+        '
+        Me.ImgFamiliar.Image = Global.Tarea.My.Resources.Resources.familiar2
+        Me.ImgFamiliar.Location = New System.Drawing.Point(25, 100)
+        Me.ImgFamiliar.Name = "ImgFamiliar"
+        Me.ImgFamiliar.Size = New System.Drawing.Size(400, 225)
+        Me.ImgFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ImgFamiliar.TabIndex = 11
+        Me.ImgFamiliar.TabStop = False
         '
         'Form3
         '

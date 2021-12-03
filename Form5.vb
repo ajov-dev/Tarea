@@ -139,6 +139,8 @@
 		ComboMVehiculo.Text = ("")
 		ComboSucursales.Text = ("")
 		ComboMetodoPago.Text = ("")
+		SaldoTotal = 0
+		Impuesto = 0
 
 
 	End Sub
