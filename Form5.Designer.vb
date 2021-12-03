@@ -30,8 +30,6 @@ Partial Class Form5
         Me.LabelNacionalidad = New System.Windows.Forms.Label()
         Me.LabelCedula = New System.Windows.Forms.Label()
         Me.TextoCedula = New System.Windows.Forms.TextBox()
-        Me.TextoDireccion = New System.Windows.Forms.TextBox()
-        Me.LabelDireccion = New System.Windows.Forms.Label()
         Me.LabelEdad = New System.Windows.Forms.Label()
         Me.LabelLicencia = New System.Windows.Forms.Label()
         Me.TextoApellido = New System.Windows.Forms.TextBox()
@@ -40,7 +38,9 @@ Partial Class Form5
         Me.TextoLicencia = New System.Windows.Forms.TextBox()
         Me.LabelNombre = New System.Windows.Forms.Label()
         Me.GrupoDatosReserva = New System.Windows.Forms.GroupBox()
+        Me.ComboMVehiculo = New System.Windows.Forms.ComboBox()
         Me.grupoDatosReservaTarifa = New System.Windows.Forms.GroupBox()
+        Me.ComboFechaRetiroMes = New System.Windows.Forms.ComboBox()
         Me.ComboMetodoPago = New System.Windows.Forms.ComboBox()
         Me.TextoTiempoRentar = New System.Windows.Forms.TextBox()
         Me.LabelMetodoPago = New System.Windows.Forms.Label()
@@ -51,7 +51,6 @@ Partial Class Form5
         Me.RadioTarifaElegidaHoras = New System.Windows.Forms.RadioButton()
         Me.LabelTiempoRentar = New System.Windows.Forms.Label()
         Me.ComboFechaRetiroAño = New System.Windows.Forms.ComboBox()
-        Me.ComboFechaRetiroMes = New System.Windows.Forms.ComboBox()
         Me.ComboFechaRetiroDia = New System.Windows.Forms.ComboBox()
         Me.LabelFechaRetiro = New System.Windows.Forms.Label()
         Me.GrupoTipoAuto = New System.Windows.Forms.GroupBox()
@@ -59,11 +58,12 @@ Partial Class Form5
         Me.RadioTipoVehiculoFamiliar = New System.Windows.Forms.RadioButton()
         Me.ComboSucursales = New System.Windows.Forms.ComboBox()
         Me.LabelModeloVehiculo = New System.Windows.Forms.Label()
-        Me.ComboMVehiculos = New System.Windows.Forms.ComboBox()
         Me.LabelLugarRetiro = New System.Windows.Forms.Label()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.BotonLimpiar = New System.Windows.Forms.Button()
+        Me.TextoDireccion = New System.Windows.Forms.TextBox()
+        Me.LabelDireccion = New System.Windows.Forms.Label()
         Me.GrupoDetallesConductor.SuspendLayout()
         Me.GrupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
@@ -74,6 +74,8 @@ Partial Class Form5
         'GrupoDetallesConductor
         '
         Me.GrupoDetallesConductor.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GrupoDetallesConductor.Controls.Add(Me.TextoDireccion)
+        Me.GrupoDetallesConductor.Controls.Add(Me.LabelDireccion)
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelTelefono)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoTelefono)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoNombre)
@@ -81,8 +83,6 @@ Partial Class Form5
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelNacionalidad)
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelCedula)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoCedula)
-        Me.GrupoDetallesConductor.Controls.Add(Me.TextoDireccion)
-        Me.GrupoDetallesConductor.Controls.Add(Me.LabelDireccion)
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelEdad)
         Me.GrupoDetallesConductor.Controls.Add(Me.LabelLicencia)
         Me.GrupoDetallesConductor.Controls.Add(Me.TextoApellido)
@@ -101,9 +101,9 @@ Partial Class Form5
         'LabelTelefono
         '
         Me.LabelTelefono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelTelefono.Location = New System.Drawing.Point(603, 123)
+        Me.LabelTelefono.Location = New System.Drawing.Point(618, 76)
         Me.LabelTelefono.Name = "LabelTelefono"
-        Me.LabelTelefono.Size = New System.Drawing.Size(70, 25)
+        Me.LabelTelefono.Size = New System.Drawing.Size(68, 25)
         Me.LabelTelefono.TabIndex = 51
         Me.LabelTelefono.Text = "TEL."
         '
@@ -111,7 +111,7 @@ Partial Class Form5
         '
         Me.TextoTelefono.BackColor = System.Drawing.Color.White
         Me.TextoTelefono.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextoTelefono.Location = New System.Drawing.Point(695, 115)
+        Me.TextoTelefono.Location = New System.Drawing.Point(692, 70)
         Me.TextoTelefono.Name = "TextoTelefono"
         Me.TextoTelefono.Size = New System.Drawing.Size(133, 31)
         Me.TextoTelefono.TabIndex = 52
@@ -120,7 +120,7 @@ Partial Class Form5
         '
         Me.TextoNombre.BackColor = System.Drawing.Color.White
         Me.TextoNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoNombre.Location = New System.Drawing.Point(154, 35)
+        Me.TextoNombre.Location = New System.Drawing.Point(120, 34)
         Me.TextoNombre.Name = "TextoNombre"
         Me.TextoNombre.Size = New System.Drawing.Size(158, 31)
         Me.TextoNombre.TabIndex = 33
@@ -129,7 +129,7 @@ Partial Class Form5
         '
         Me.TextoEdad.BackColor = System.Drawing.Color.White
         Me.TextoEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoEdad.Location = New System.Drawing.Point(695, 75)
+        Me.TextoEdad.Location = New System.Drawing.Point(692, 33)
         Me.TextoEdad.Name = "TextoEdad"
         Me.TextoEdad.Size = New System.Drawing.Size(133, 31)
         Me.TextoEdad.TabIndex = 30
@@ -137,7 +137,7 @@ Partial Class Form5
         'LabelNacionalidad
         '
         Me.LabelNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNacionalidad.Location = New System.Drawing.Point(6, 80)
+        Me.LabelNacionalidad.Location = New System.Drawing.Point(306, 40)
         Me.LabelNacionalidad.Name = "LabelNacionalidad"
         Me.LabelNacionalidad.Size = New System.Drawing.Size(142, 25)
         Me.LabelNacionalidad.TabIndex = 29
@@ -146,7 +146,7 @@ Partial Class Form5
         'LabelCedula
         '
         Me.LabelCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelCedula.Location = New System.Drawing.Point(601, 40)
+        Me.LabelCedula.Location = New System.Drawing.Point(6, 114)
         Me.LabelCedula.Name = "LabelCedula"
         Me.LabelCedula.Size = New System.Drawing.Size(90, 25)
         Me.LabelCedula.TabIndex = 28
@@ -156,33 +156,15 @@ Partial Class Form5
         '
         Me.TextoCedula.BackColor = System.Drawing.Color.White
         Me.TextoCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoCedula.Location = New System.Drawing.Point(697, 35)
+        Me.TextoCedula.Location = New System.Drawing.Point(120, 108)
         Me.TextoCedula.Name = "TextoCedula"
-        Me.TextoCedula.Size = New System.Drawing.Size(131, 31)
+        Me.TextoCedula.Size = New System.Drawing.Size(158, 31)
         Me.TextoCedula.TabIndex = 27
-        '
-        'TextoDireccion
-        '
-        Me.TextoDireccion.BackColor = System.Drawing.Color.White
-        Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoDireccion.Location = New System.Drawing.Point(154, 115)
-        Me.TextoDireccion.Name = "TextoDireccion"
-        Me.TextoDireccion.Size = New System.Drawing.Size(420, 31)
-        Me.TextoDireccion.TabIndex = 26
-        '
-        'LabelDireccion
-        '
-        Me.LabelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDireccion.Location = New System.Drawing.Point(6, 120)
-        Me.LabelDireccion.Name = "LabelDireccion"
-        Me.LabelDireccion.Size = New System.Drawing.Size(123, 25)
-        Me.LabelDireccion.TabIndex = 25
-        Me.LabelDireccion.Text = "DIRECCIÓN"
         '
         'LabelEdad
         '
         Me.LabelEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEdad.Location = New System.Drawing.Point(603, 80)
+        Me.LabelEdad.Location = New System.Drawing.Point(618, 40)
         Me.LabelEdad.Name = "LabelEdad"
         Me.LabelEdad.Size = New System.Drawing.Size(68, 25)
         Me.LabelEdad.TabIndex = 20
@@ -191,7 +173,7 @@ Partial Class Form5
         'LabelLicencia
         '
         Me.LabelLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelLicencia.Location = New System.Drawing.Point(339, 80)
+        Me.LabelLicencia.Location = New System.Drawing.Point(307, 78)
         Me.LabelLicencia.Name = "LabelLicencia"
         Me.LabelLicencia.Size = New System.Drawing.Size(108, 25)
         Me.LabelLicencia.TabIndex = 24
@@ -201,15 +183,15 @@ Partial Class Form5
         '
         Me.TextoApellido.BackColor = System.Drawing.Color.White
         Me.TextoApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoApellido.Location = New System.Drawing.Point(453, 35)
+        Me.TextoApellido.Location = New System.Drawing.Point(120, 71)
         Me.TextoApellido.Name = "TextoApellido"
-        Me.TextoApellido.Size = New System.Drawing.Size(121, 31)
+        Me.TextoApellido.Size = New System.Drawing.Size(158, 31)
         Me.TextoApellido.TabIndex = 23
         '
         'LabelApellido
         '
         Me.LabelApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelApellido.Location = New System.Drawing.Point(339, 40)
+        Me.LabelApellido.Location = New System.Drawing.Point(6, 78)
         Me.LabelApellido.Name = "LabelApellido"
         Me.LabelApellido.Size = New System.Drawing.Size(100, 25)
         Me.LabelApellido.TabIndex = 22
@@ -219,7 +201,7 @@ Partial Class Form5
         '
         Me.TextoNacionalidad.BackColor = System.Drawing.Color.White
         Me.TextoNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoNacionalidad.Location = New System.Drawing.Point(154, 75)
+        Me.TextoNacionalidad.Location = New System.Drawing.Point(454, 34)
         Me.TextoNacionalidad.Name = "TextoNacionalidad"
         Me.TextoNacionalidad.Size = New System.Drawing.Size(158, 31)
         Me.TextoNacionalidad.TabIndex = 21
@@ -228,15 +210,15 @@ Partial Class Form5
         '
         Me.TextoLicencia.BackColor = System.Drawing.Color.White
         Me.TextoLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoLicencia.Location = New System.Drawing.Point(453, 75)
+        Me.TextoLicencia.Location = New System.Drawing.Point(454, 71)
         Me.TextoLicencia.Name = "TextoLicencia"
-        Me.TextoLicencia.Size = New System.Drawing.Size(121, 31)
+        Me.TextoLicencia.Size = New System.Drawing.Size(158, 31)
         Me.TextoLicencia.TabIndex = 13
         '
         'LabelNombre
         '
         Me.LabelNombre.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombre.Location = New System.Drawing.Point(6, 40)
+        Me.LabelNombre.Location = New System.Drawing.Point(6, 39)
         Me.LabelNombre.Name = "LabelNombre"
         Me.LabelNombre.Size = New System.Drawing.Size(100, 25)
         Me.LabelNombre.TabIndex = 0
@@ -245,11 +227,11 @@ Partial Class Form5
         'GrupoDatosReserva
         '
         Me.GrupoDatosReserva.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GrupoDatosReserva.Controls.Add(Me.ComboMVehiculo)
         Me.GrupoDatosReserva.Controls.Add(Me.grupoDatosReservaTarifa)
         Me.GrupoDatosReserva.Controls.Add(Me.GrupoTipoAuto)
         Me.GrupoDatosReserva.Controls.Add(Me.ComboSucursales)
         Me.GrupoDatosReserva.Controls.Add(Me.LabelModeloVehiculo)
-        Me.GrupoDatosReserva.Controls.Add(Me.ComboMVehiculos)
         Me.GrupoDatosReserva.Controls.Add(Me.LabelLugarRetiro)
         Me.GrupoDatosReserva.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrupoDatosReserva.Location = New System.Drawing.Point(10, 180)
@@ -259,16 +241,27 @@ Partial Class Form5
         Me.GrupoDatosReserva.TabStop = False
         Me.GrupoDatosReserva.Text = "DATOS DE RESERVA"
         '
+        'ComboMVehiculo
+        '
+        Me.ComboMVehiculo.BackColor = System.Drawing.Color.Silver
+        Me.ComboMVehiculo.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboMVehiculo.FormattingEnabled = True
+        Me.ComboMVehiculo.Location = New System.Drawing.Point(16, 161)
+        Me.ComboMVehiculo.Name = "ComboMVehiculo"
+        Me.ComboMVehiculo.Size = New System.Drawing.Size(324, 31)
+        Me.ComboMVehiculo.TabIndex = 21
+        Me.ComboMVehiculo.Text = "SELECCIONE EL MODELO"
+        '
         'grupoDatosReservaTarifa
         '
         Me.grupoDatosReservaTarifa.BackColor = System.Drawing.Color.Transparent
+        Me.grupoDatosReservaTarifa.Controls.Add(Me.ComboFechaRetiroMes)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.ComboMetodoPago)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.TextoTiempoRentar)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelMetodoPago)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.GrupoTarifaElegida)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelTiempoRentar)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.ComboFechaRetiroAño)
-        Me.grupoDatosReservaTarifa.Controls.Add(Me.ComboFechaRetiroMes)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.ComboFechaRetiroDia)
         Me.grupoDatosReservaTarifa.Controls.Add(Me.LabelFechaRetiro)
         Me.grupoDatosReservaTarifa.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold)
@@ -278,12 +271,22 @@ Partial Class Form5
         Me.grupoDatosReservaTarifa.TabIndex = 20
         Me.grupoDatosReservaTarifa.TabStop = False
         '
+        'ComboFechaRetiroMes
+        '
+        Me.ComboFechaRetiroMes.BackColor = System.Drawing.Color.Silver
+        Me.ComboFechaRetiroMes.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboFechaRetiroMes.FormattingEnabled = True
+        Me.ComboFechaRetiroMes.Location = New System.Drawing.Point(260, 119)
+        Me.ComboFechaRetiroMes.Name = "ComboFechaRetiroMes"
+        Me.ComboFechaRetiroMes.Size = New System.Drawing.Size(103, 31)
+        Me.ComboFechaRetiroMes.TabIndex = 26
+        Me.ComboFechaRetiroMes.Text = "MES"
+        '
         'ComboMetodoPago
         '
         Me.ComboMetodoPago.BackColor = System.Drawing.Color.Silver
         Me.ComboMetodoPago.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboMetodoPago.FormattingEnabled = True
-        Me.ComboMetodoPago.Items.AddRange(New Object() {"EFECTIVO", "TARJETA DE CREDITO", "TRANSFERENCIA BANCARIA", "YAPPY", "NEQUI"})
         Me.ComboMetodoPago.Location = New System.Drawing.Point(6, 233)
         Me.ComboMetodoPago.Name = "ComboMetodoPago"
         Me.ComboMetodoPago.Size = New System.Drawing.Size(324, 31)
@@ -294,7 +297,7 @@ Partial Class Form5
         '
         Me.TextoTiempoRentar.BackColor = System.Drawing.Color.Silver
         Me.TextoTiempoRentar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoTiempoRentar.Location = New System.Drawing.Point(171, 153)
+        Me.TextoTiempoRentar.Location = New System.Drawing.Point(171, 158)
         Me.TextoTiempoRentar.Name = "TextoTiempoRentar"
         Me.TextoTiempoRentar.Size = New System.Drawing.Size(175, 31)
         Me.TextoTiempoRentar.TabIndex = 25
@@ -373,7 +376,7 @@ Partial Class Form5
         '
         Me.LabelTiempoRentar.AutoSize = True
         Me.LabelTiempoRentar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTiempoRentar.Location = New System.Drawing.Point(6, 161)
+        Me.LabelTiempoRentar.Location = New System.Drawing.Point(3, 166)
         Me.LabelTiempoRentar.Name = "LabelTiempoRentar"
         Me.LabelTiempoRentar.Size = New System.Drawing.Size(162, 23)
         Me.LabelTiempoRentar.TabIndex = 24
@@ -384,31 +387,17 @@ Partial Class Form5
         Me.ComboFechaRetiroAño.BackColor = System.Drawing.Color.Silver
         Me.ComboFechaRetiroAño.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboFechaRetiroAño.FormattingEnabled = True
-        Me.ComboFechaRetiroAño.Items.AddRange(New Object() {"2021" & Global.Microsoft.VisualBasic.ChrW(9), "2022" & Global.Microsoft.VisualBasic.ChrW(9), "2023" & Global.Microsoft.VisualBasic.ChrW(9), "2024" & Global.Microsoft.VisualBasic.ChrW(9), "2025" & Global.Microsoft.VisualBasic.ChrW(9), "2026" & Global.Microsoft.VisualBasic.ChrW(9), "2027" & Global.Microsoft.VisualBasic.ChrW(9), "2028" & Global.Microsoft.VisualBasic.ChrW(9), "2029" & Global.Microsoft.VisualBasic.ChrW(9), "2030" & Global.Microsoft.VisualBasic.ChrW(9), "2031" & Global.Microsoft.VisualBasic.ChrW(9), "2032" & Global.Microsoft.VisualBasic.ChrW(9), "2033" & Global.Microsoft.VisualBasic.ChrW(9), "2034" & Global.Microsoft.VisualBasic.ChrW(9), "2035" & Global.Microsoft.VisualBasic.ChrW(9), "2036" & Global.Microsoft.VisualBasic.ChrW(9), "2037" & Global.Microsoft.VisualBasic.ChrW(9), "2038" & Global.Microsoft.VisualBasic.ChrW(9), "2039" & Global.Microsoft.VisualBasic.ChrW(9), "2040" & Global.Microsoft.VisualBasic.ChrW(9), "2041" & Global.Microsoft.VisualBasic.ChrW(9), "2042" & Global.Microsoft.VisualBasic.ChrW(9), "2043" & Global.Microsoft.VisualBasic.ChrW(9), "2044" & Global.Microsoft.VisualBasic.ChrW(9), "2045" & Global.Microsoft.VisualBasic.ChrW(9), "2046" & Global.Microsoft.VisualBasic.ChrW(9), "2047" & Global.Microsoft.VisualBasic.ChrW(9), "2048" & Global.Microsoft.VisualBasic.ChrW(9), "2049" & Global.Microsoft.VisualBasic.ChrW(9), "2050" & Global.Microsoft.VisualBasic.ChrW(9)})
-        Me.ComboFechaRetiroAño.Location = New System.Drawing.Point(361, 119)
+        Me.ComboFechaRetiroAño.Location = New System.Drawing.Point(369, 119)
         Me.ComboFechaRetiroAño.Name = "ComboFechaRetiroAño"
-        Me.ComboFechaRetiroAño.Size = New System.Drawing.Size(103, 31)
+        Me.ComboFechaRetiroAño.Size = New System.Drawing.Size(99, 31)
         Me.ComboFechaRetiroAño.TabIndex = 23
         Me.ComboFechaRetiroAño.Text = "AÑO"
-        '
-        'ComboFechaRetiroMes
-        '
-        Me.ComboFechaRetiroMes.BackColor = System.Drawing.Color.Silver
-        Me.ComboFechaRetiroMes.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboFechaRetiroMes.FormattingEnabled = True
-        Me.ComboFechaRetiroMes.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
-        Me.ComboFechaRetiroMes.Location = New System.Drawing.Point(260, 119)
-        Me.ComboFechaRetiroMes.Name = "ComboFechaRetiroMes"
-        Me.ComboFechaRetiroMes.Size = New System.Drawing.Size(95, 31)
-        Me.ComboFechaRetiroMes.TabIndex = 22
-        Me.ComboFechaRetiroMes.Text = "MES"
         '
         'ComboFechaRetiroDia
         '
         Me.ComboFechaRetiroDia.BackColor = System.Drawing.Color.Silver
         Me.ComboFechaRetiroDia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboFechaRetiroDia.FormattingEnabled = True
-        Me.ComboFechaRetiroDia.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
         Me.ComboFechaRetiroDia.Location = New System.Drawing.Point(171, 119)
         Me.ComboFechaRetiroDia.Name = "ComboFechaRetiroDia"
         Me.ComboFechaRetiroDia.Size = New System.Drawing.Size(83, 31)
@@ -480,17 +469,6 @@ Partial Class Form5
         Me.LabelModeloVehiculo.TabIndex = 18
         Me.LabelModeloVehiculo.Text = "MODELO DEL VEHICULO"
         '
-        'ComboMVehiculos
-        '
-        Me.ComboMVehiculos.BackColor = System.Drawing.Color.Silver
-        Me.ComboMVehiculos.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboMVehiculos.FormattingEnabled = True
-        Me.ComboMVehiculos.Location = New System.Drawing.Point(16, 153)
-        Me.ComboMVehiculos.Name = "ComboMVehiculos"
-        Me.ComboMVehiculos.Size = New System.Drawing.Size(324, 31)
-        Me.ComboMVehiculos.TabIndex = 19
-        Me.ComboMVehiculos.Text = "SELECCIONE EL MODELO"
-        '
         'LabelLugarRetiro
         '
         Me.LabelLugarRetiro.AutoSize = True
@@ -537,6 +515,24 @@ Partial Class Form5
         Me.BotonLimpiar.Text = "L&IMPIAR"
         Me.BotonLimpiar.UseVisualStyleBackColor = False
         '
+        'TextoDireccion
+        '
+        Me.TextoDireccion.BackColor = System.Drawing.Color.White
+        Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextoDireccion.Location = New System.Drawing.Point(455, 109)
+        Me.TextoDireccion.Name = "TextoDireccion"
+        Me.TextoDireccion.Size = New System.Drawing.Size(370, 31)
+        Me.TextoDireccion.TabIndex = 54
+        '
+        'LabelDireccion
+        '
+        Me.LabelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelDireccion.Location = New System.Drawing.Point(307, 114)
+        Me.LabelDireccion.Name = "LabelDireccion"
+        Me.LabelDireccion.Size = New System.Drawing.Size(141, 25)
+        Me.LabelDireccion.TabIndex = 53
+        Me.LabelDireccion.Text = "DIRECCIÓN"
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -550,7 +546,7 @@ Partial Class Form5
         Me.Controls.Add(Me.BotonContinuar)
         Me.Name = "Form5"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RESERVACION"
+        Me.Text = " "
         Me.GrupoDetallesConductor.ResumeLayout(False)
         Me.GrupoDetallesConductor.PerformLayout()
         Me.GrupoDatosReserva.ResumeLayout(False)
@@ -586,17 +582,13 @@ Partial Class Form5
     Friend WithEvents LabelNacionalidad As Label
     Friend WithEvents LabelCedula As Label
     Friend WithEvents TextoCedula As TextBox
-    Friend WithEvents TextoDireccion As TextBox
-    Friend WithEvents LabelDireccion As Label
     Friend WithEvents LabelLicencia As Label
     Friend WithEvents grupoDatosReservaTarifa As GroupBox
     Friend WithEvents TextoTiempoRentar As TextBox
     Friend WithEvents LabelTiempoRentar As Label
     Friend WithEvents ComboFechaRetiroAño As ComboBox
-    Friend WithEvents ComboFechaRetiroMes As ComboBox
     Friend WithEvents ComboFechaRetiroDia As ComboBox
     Friend WithEvents LabelFechaRetiro As Label
-    Friend WithEvents ComboMVehiculos As ComboBox
     Friend WithEvents LabelModeloVehiculo As Label
     Friend WithEvents TextoNombre As TextBox
     Friend WithEvents ComboMetodoPago As ComboBox
@@ -606,4 +598,8 @@ Partial Class Form5
     Friend WithEvents BotonCancelar As Button
     Friend WithEvents BotonContinuar As Button
     Friend WithEvents BotonLimpiar As Button
+    Friend WithEvents ComboMVehiculo As ComboBox
+    Friend WithEvents ComboFechaRetiroMes As ComboBox
+    Friend WithEvents TextoDireccion As TextBox
+    Friend WithEvents LabelDireccion As Label
 End Class

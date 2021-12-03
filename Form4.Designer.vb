@@ -36,7 +36,6 @@ Partial Class Form4
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-
         Me.GrupoPrecios.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -203,21 +202,6 @@ Partial Class Form4
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 27
         Me.PictureBox1.TabStop = False
-        '
-        'LabelTitulo
-        '
-        Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
-        Me.LabelTitulo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LabelTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LabelTitulo.Font = New System.Drawing.Font("Candara", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTitulo.Location = New System.Drawing.Point(0, 0)
-        Me.LabelTitulo.Margin = New System.Windows.Forms.Padding(10)
-        Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelTitulo.Size = New System.Drawing.Size(884, 75)
-        Me.LabelTitulo.TabIndex = 28
-        Me.LabelTitulo.Text = "TARIFAS PARA MODELOS LUJOSOS"
-        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form4
         '
