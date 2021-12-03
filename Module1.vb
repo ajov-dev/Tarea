@@ -8,10 +8,10 @@
     Public arrayAñosDisponibles = New String() {"2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"}
     Public x As Integer = 0
     Public SignoDeBalboa As String = "Bl/. "
-    Public VPrecioHora As String
-    Public VPrecioDia As String
-    Public VPrecioSemana As String
-    Public VPrecioMes As String
+    ''Public VPrecioHora As String
+    ''Public VPrecioDia As String
+    ''Public VPrecioSemana As String
+    ''Public VPrecioMes As String
     Public VPrecioHoraFamiliar = New Integer() {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
     Public VPrecioDiaFamiliar = New Integer() {100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200}
     Public VPrecioSemanaFamiliar = New Integer() {1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000}

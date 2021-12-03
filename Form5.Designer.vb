@@ -23,6 +23,8 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GrupoDetallesConductor = New System.Windows.Forms.GroupBox()
+        Me.TextoDireccion = New System.Windows.Forms.TextBox()
+        Me.LabelDireccion = New System.Windows.Forms.Label()
         Me.LabelTelefono = New System.Windows.Forms.Label()
         Me.TextoTelefono = New System.Windows.Forms.TextBox()
         Me.TextoNombre = New System.Windows.Forms.TextBox()
@@ -62,8 +64,6 @@ Partial Class Form5
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.BotonLimpiar = New System.Windows.Forms.Button()
-        Me.TextoDireccion = New System.Windows.Forms.TextBox()
-        Me.LabelDireccion = New System.Windows.Forms.Label()
         Me.GrupoDetallesConductor.SuspendLayout()
         Me.GrupoDatosReserva.SuspendLayout()
         Me.grupoDatosReservaTarifa.SuspendLayout()
@@ -97,6 +97,24 @@ Partial Class Form5
         Me.GrupoDetallesConductor.TabIndex = 0
         Me.GrupoDetallesConductor.TabStop = False
         Me.GrupoDetallesConductor.Text = "DETALLES DEL CONDUCTOR"
+        '
+        'TextoDireccion
+        '
+        Me.TextoDireccion.BackColor = System.Drawing.Color.White
+        Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextoDireccion.Location = New System.Drawing.Point(455, 109)
+        Me.TextoDireccion.Name = "TextoDireccion"
+        Me.TextoDireccion.Size = New System.Drawing.Size(370, 31)
+        Me.TextoDireccion.TabIndex = 54
+        '
+        'LabelDireccion
+        '
+        Me.LabelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelDireccion.Location = New System.Drawing.Point(307, 114)
+        Me.LabelDireccion.Name = "LabelDireccion"
+        Me.LabelDireccion.Size = New System.Drawing.Size(141, 25)
+        Me.LabelDireccion.TabIndex = 53
+        Me.LabelDireccion.Text = "DIRECCIÓN"
         '
         'LabelTelefono
         '
@@ -321,7 +339,7 @@ Partial Class Form5
         Me.GrupoTarifaElegida.Controls.Add(Me.RadioTarifaElegidaHoras)
         Me.GrupoTarifaElegida.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrupoTarifaElegida.ForeColor = System.Drawing.Color.White
-        Me.GrupoTarifaElegida.Location = New System.Drawing.Point(6, 30)
+        Me.GrupoTarifaElegida.Location = New System.Drawing.Point(10, 27)
         Me.GrupoTarifaElegida.Name = "GrupoTarifaElegida"
         Me.GrupoTarifaElegida.Size = New System.Drawing.Size(462, 86)
         Me.GrupoTarifaElegida.TabIndex = 1
@@ -514,24 +532,6 @@ Partial Class Form5
         Me.BotonLimpiar.TabIndex = 56
         Me.BotonLimpiar.Text = "L&IMPIAR"
         Me.BotonLimpiar.UseVisualStyleBackColor = False
-        '
-        'TextoDireccion
-        '
-        Me.TextoDireccion.BackColor = System.Drawing.Color.White
-        Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextoDireccion.Location = New System.Drawing.Point(455, 109)
-        Me.TextoDireccion.Name = "TextoDireccion"
-        Me.TextoDireccion.Size = New System.Drawing.Size(370, 31)
-        Me.TextoDireccion.TabIndex = 54
-        '
-        'LabelDireccion
-        '
-        Me.LabelDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDireccion.Location = New System.Drawing.Point(307, 114)
-        Me.LabelDireccion.Name = "LabelDireccion"
-        Me.LabelDireccion.Size = New System.Drawing.Size(141, 25)
-        Me.LabelDireccion.TabIndex = 53
-        Me.LabelDireccion.Text = "DIRECCIÓN"
         '
         'Form5
         '

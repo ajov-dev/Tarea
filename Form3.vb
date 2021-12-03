@@ -11,24 +11,31 @@
         End If
     End Sub
 
-    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
-        Form5.Show()
-    End Sub
-
-
-
     Private Sub ComboMFamiliar_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboMFamiliar.SelectedIndexChanged
 
+        If ComboMFamiliar.SelectedIndex Then
+            x = 0
+            Do
+                x += 1
+            Loop While (x < ComboMFamiliar.SelectedIndex)
 
-#Disable Warning BC42104 ' Variable is used before it has been assigned a value
-        TextoHora.Text = SignoDeBalboa & VPrecioHora
-        TextoDia.Text = SignoDeBalboa & VPrecioDia
-        TextoSemana.Text = SignoDeBalboa & VPrecioSemana
-        TextoMes.Text = SignoDeBalboa & VPrecioMes
-#Enable Warning BC42104 ' Variable is used before it has been assigned a value
+        End If
+
+        TextoHora.Text = SignoDeBalboa & VPrecioHoraFamiliar(x)
+        TextoDia.Text = SignoDeBalboa & VPrecioDiaFamiliar(x)
+        TextoSemana.Text = SignoDeBalboa & VPrecioSemanaFamiliar(x)
+        TextoMes.Text = SignoDeBalboa & VPrecioMesFamiliar(x)
+
+    End Sub
+
+    Private Sub BotonContinuar_Click(sender As Object, e As EventArgs) Handles BotonContinuar.Click
+        Form5.Show()
+        Form5.RadioTipoVehiculoFamiliar.Checked = True
+        Form5.ComboMVehiculo.SelectedIndex = ComboMFamiliar.SelectedIndex
     End Sub
 
     Private Sub BotonCancelar_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
         Dispose()
     End Sub
+
 End Class

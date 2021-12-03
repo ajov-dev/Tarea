@@ -1,4 +1,6 @@
 ﻿Public Class Form5
+	Public Impuesto As Double
+	Public SaldoTotal As Double
 	Private Sub BotonCancelar_Click(sender As Object, e As EventArgs) Handles BotonCancelar.Click
 		Dispose()
 	End Sub
@@ -20,26 +22,98 @@
 		Form6.TextoModelo.Text = ComboMVehiculo.Text
 		Form6.TextoMetodoPago.Text = ComboMetodoPago.Text
 		Form6.TextoTiempoRentar.Text = TextoTiempoRentar.Text
-		Form6.TextoFechaRetiro.Text = ComboFechaRetiroMes.Text & "/" & ComboFechaRetiroDia.Text & "/" & ComboFechaRetiroAño.Text
+		Form6.TextoFechaRetiro.Text = ComboFechaRetiroMes.Text & " / " & ComboFechaRetiroDia.Text & " / " & ComboFechaRetiroAño.Text
 		Form6.TextoSucursal.Text = ComboSucursales.Text
 
+		x = 0
+		Do
+			x += 1
+		Loop While (x < ComboMVehiculo.SelectedIndex)
+		Dim Costo As Integer
+
+		''CALCULOS LEVES PARA TEXTOCOSTO.TEXT X HORAS
+
 		If RadioTarifaElegidaHoras.Checked Then
-			Form6.TextoTarifaElegida.Text = "HORAS"
+			Form6.TextoTarifaElegida.Text = "Horas"
+			If RadioTipoVehiculoFamiliar.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioHoraFamiliar(x)
+				End If
+			End If
+			If RadioTipoVehiculoLujo.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioHoraLujo(x)
+				End If
+			End If
 		End If
+
+		''CALCULOS LEVES PARA TEXTOCOSTO.TEXT X DIAS
+
+
 		If RadioTarifaElegidaDias.Checked Then
-			Form6.TextoTarifaElegida.Text = "DIAS"
+			Form6.TextoTarifaElegida.Text = "Dias"
+
+			If RadioTipoVehiculoFamiliar.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioDiaFamiliar(x)
+				End If
+			End If
+			If RadioTipoVehiculoLujo.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioDiaLujo(x)
+				End If
+			End If
+
 		End If
+
+		''CALCULOS LEVES PARA TEXTOCOSTO.TEXT X SEMANAS
+
+
 		If RadioTarifaElegidaSemanas.Checked Then
-			Form6.TextoTarifaElegida.Text = "SEMANAS"
+			Form6.TextoTarifaElegida.Text = "Semanas"
+
+			If RadioTipoVehiculoFamiliar.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioSemanaFamiliar(x)
+				End If
+			End If
+			If RadioTipoVehiculoLujo.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioSemanaLujo(x)
+				End If
+			End If
+
 		End If
+
+		''CALCULOS LEVES PARA TEXTOCOSTO.TEXT X MESES
+
+
 		If RadioTarifaElegidaMeses.Checked Then
-			Form6.TextoTarifaElegida.Text = "MESES"
+			Form6.TextoTarifaElegida.Text = "Mes"
+
+			If RadioTipoVehiculoFamiliar.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioMesFamiliar(x)
+				End If
+			End If
+			If RadioTipoVehiculoLujo.Checked Then
+				If ComboMVehiculo.SelectedIndex Then
+					Costo = Val(TextoTiempoRentar.Text) * VPrecioMesLujo(x)
+				End If
+			End If
 		End If
 
-
-		''Form6.Texto.Text = ComboMVehiculo.Text
-		''Form6.TextoModelo.Text = ComboMVehiculo.Text
-		''Form6.TextoModelo.Text = ComboMVehiculo.Text
+		If RadioTipoVehiculoFamiliar.Checked Then
+			Impuesto = Costo * 0.17
+			SaldoTotal = Impuesto + Costo
+		End If
+		If RadioTipoVehiculoLujo.Checked Then
+			Impuesto = Costo * 0.23
+			SaldoTotal = Impuesto + Costo
+		End If
+		Form6.TextoCosto.Text = SignoDeBalboa & " " & Costo
+		Form6.TextoImpuesto.Text = SignoDeBalboa & " " & Impuesto
+		Form6.TextoTotalPagar.Text = SignoDeBalboa & " " & SaldoTotal
 
 	End Sub
 
@@ -62,12 +136,14 @@
 		ComboFechaRetiroDia.Text = ("")
 		ComboFechaRetiroMes.Text = ("")
 		ComboFechaRetiroAño.Text = ("")
+		ComboMVehiculo.Text = ("")
+		ComboSucursales.Text = ("")
+		ComboMetodoPago.Text = ("")
 
 
 	End Sub
 
 	Private Sub RadioTipoVehiculoFamiliar_CheckedChanged(sender As Object, e As EventArgs) Handles RadioTipoVehiculoFamiliar.CheckedChanged
-
 		ComboMVehiculo.Items.Clear()
 		Dim y As Integer
 		y = 0
@@ -135,12 +211,7 @@
 		ComboMVehiculo.Items.Clear()
 
 		If ComboMVehiculo.SelectedIndex Then
-			x = 0
-			Do
-				ComboMVehiculo.Items.Add(arrayMAutosFamiliar(x))
-				ComboMVehiculo.Items.Add(arrayMAutosLujo(x))
-				x += 1
-			Loop While (x < arrayMAutosFamiliar.Length)
+			ComboMVehiculo.Items.Add("SELECCIONE UN TIPO POR FAVOR.")
 		End If
 
 	End Sub

@@ -22,7 +22,7 @@ Partial Class Form6
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.LabelModelo = New System.Windows.Forms.Label()
         Me.GrupoReservacion = New System.Windows.Forms.GroupBox()
         Me.LabelTelefono = New System.Windows.Forms.Label()
         Me.TextoTelefono = New System.Windows.Forms.TextBox()
@@ -50,30 +50,30 @@ Partial Class Form6
         Me.TextoMetodoPago = New System.Windows.Forms.TextBox()
         Me.TextoTarifaElegida = New System.Windows.Forms.TextBox()
         Me.TextoModelo = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelTiempoRentar = New System.Windows.Forms.Label()
+        Me.LabelCosto = New System.Windows.Forms.Label()
+        Me.LabelItbms = New System.Windows.Forms.Label()
+        Me.LabelTotalPagar = New System.Windows.Forms.Label()
+        Me.LabelFechaRetiro = New System.Windows.Forms.Label()
+        Me.LabelSucursal = New System.Windows.Forms.Label()
+        Me.LabelMetodoPago = New System.Windows.Forms.Label()
+        Me.LabelTarifa = New System.Windows.Forms.Label()
         Me.BotonCancelar = New System.Windows.Forms.Button()
         Me.BotonContinuar = New System.Windows.Forms.Button()
         Me.GrupoReservacion.SuspendLayout()
         Me.GrupoDatosDelVehiculo.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label12
+        'LabelModelo
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(6, 42)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label12.Size = New System.Drawing.Size(103, 43)
-        Me.Label12.TabIndex = 18
-        Me.Label12.Text = "MODELO"
+        Me.LabelModelo.AutoSize = True
+        Me.LabelModelo.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelModelo.Location = New System.Drawing.Point(6, 42)
+        Me.LabelModelo.Name = "LabelModelo"
+        Me.LabelModelo.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelModelo.Size = New System.Drawing.Size(103, 43)
+        Me.LabelModelo.TabIndex = 18
+        Me.LabelModelo.Text = "MODELO"
         '
         'GrupoReservacion
         '
@@ -117,6 +117,7 @@ Partial Class Form6
         'TextoTelefono
         '
         Me.TextoTelefono.BackColor = System.Drawing.Color.White
+        Me.TextoTelefono.Enabled = False
         Me.TextoTelefono.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoTelefono.Location = New System.Drawing.Point(674, 76)
         Me.TextoTelefono.Name = "TextoTelefono"
@@ -136,6 +137,7 @@ Partial Class Form6
         'TextoEdad
         '
         Me.TextoEdad.BackColor = System.Drawing.Color.White
+        Me.TextoEdad.Enabled = False
         Me.TextoEdad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoEdad.Location = New System.Drawing.Point(674, 39)
         Me.TextoEdad.Name = "TextoEdad"
@@ -169,6 +171,7 @@ Partial Class Form6
         'TextoCedula
         '
         Me.TextoCedula.BackColor = System.Drawing.Color.White
+        Me.TextoCedula.Enabled = False
         Me.TextoCedula.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoCedula.Location = New System.Drawing.Point(136, 113)
         Me.TextoCedula.Name = "TextoCedula"
@@ -178,6 +181,7 @@ Partial Class Form6
         'TextoDireccion
         '
         Me.TextoDireccion.BackColor = System.Drawing.Color.White
+        Me.TextoDireccion.Enabled = False
         Me.TextoDireccion.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoDireccion.Location = New System.Drawing.Point(438, 113)
         Me.TextoDireccion.Name = "TextoDireccion"
@@ -223,6 +227,7 @@ Partial Class Form6
         'TextoApellido
         '
         Me.TextoApellido.BackColor = System.Drawing.Color.White
+        Me.TextoApellido.Enabled = False
         Me.TextoApellido.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoApellido.Location = New System.Drawing.Point(136, 76)
         Me.TextoApellido.Name = "TextoApellido"
@@ -244,6 +249,7 @@ Partial Class Form6
         'TextoNacionalidad
         '
         Me.TextoNacionalidad.BackColor = System.Drawing.Color.White
+        Me.TextoNacionalidad.Enabled = False
         Me.TextoNacionalidad.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoNacionalidad.Location = New System.Drawing.Point(438, 39)
         Me.TextoNacionalidad.Name = "TextoNacionalidad"
@@ -253,6 +259,7 @@ Partial Class Form6
         'TextoLicencia
         '
         Me.TextoLicencia.BackColor = System.Drawing.Color.White
+        Me.TextoLicencia.Enabled = False
         Me.TextoLicencia.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextoLicencia.Location = New System.Drawing.Point(438, 76)
         Me.TextoLicencia.Name = "TextoLicencia"
@@ -283,15 +290,15 @@ Partial Class Form6
         Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextoMetodoPago)
         Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextoTarifaElegida)
         Me.GrupoDatosDelVehiculo.Controls.Add(Me.TextoModelo)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label15)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label14)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label13)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label11)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label10)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label9)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label8)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label1)
-        Me.GrupoDatosDelVehiculo.Controls.Add(Me.Label12)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelTiempoRentar)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelCosto)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelItbms)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelTotalPagar)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelFechaRetiro)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelSucursal)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelMetodoPago)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelTarifa)
+        Me.GrupoDatosDelVehiculo.Controls.Add(Me.LabelModelo)
         Me.GrupoDatosDelVehiculo.Font = New System.Drawing.Font("Candara", 18.0!, System.Drawing.FontStyle.Bold)
         Me.GrupoDatosDelVehiculo.Location = New System.Drawing.Point(10, 180)
         Me.GrupoDatosDelVehiculo.Name = "GrupoDatosDelVehiculo"
@@ -390,93 +397,93 @@ Partial Class Form6
         Me.TextoModelo.Size = New System.Drawing.Size(237, 31)
         Me.TextoModelo.TabIndex = 34
         '
-        'Label15
+        'LabelTiempoRentar
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(448, 42)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label15.Size = New System.Drawing.Size(182, 43)
-        Me.Label15.TabIndex = 26
-        Me.Label15.Text = "TIEMPO A RENTAR"
+        Me.LabelTiempoRentar.AutoSize = True
+        Me.LabelTiempoRentar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTiempoRentar.Location = New System.Drawing.Point(448, 42)
+        Me.LabelTiempoRentar.Name = "LabelTiempoRentar"
+        Me.LabelTiempoRentar.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelTiempoRentar.Size = New System.Drawing.Size(182, 43)
+        Me.LabelTiempoRentar.TabIndex = 26
+        Me.LabelTiempoRentar.Text = "TIEMPO A RENTAR"
         '
-        'Label14
+        'LabelCosto
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(450, 85)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label14.Size = New System.Drawing.Size(87, 43)
-        Me.Label14.TabIndex = 25
-        Me.Label14.Text = "COSTO"
+        Me.LabelCosto.AutoSize = True
+        Me.LabelCosto.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelCosto.Location = New System.Drawing.Point(450, 85)
+        Me.LabelCosto.Name = "LabelCosto"
+        Me.LabelCosto.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelCosto.Size = New System.Drawing.Size(87, 43)
+        Me.LabelCosto.TabIndex = 25
+        Me.LabelCosto.Text = "COSTO"
         '
-        'Label13
+        'LabelItbms
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(450, 131)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label13.Size = New System.Drawing.Size(82, 43)
-        Me.Label13.TabIndex = 24
-        Me.Label13.Text = "ITBMS"
+        Me.LabelItbms.AutoSize = True
+        Me.LabelItbms.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelItbms.Location = New System.Drawing.Point(450, 131)
+        Me.LabelItbms.Name = "LabelItbms"
+        Me.LabelItbms.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelItbms.Size = New System.Drawing.Size(82, 43)
+        Me.LabelItbms.TabIndex = 24
+        Me.LabelItbms.Text = "ITBMS"
         '
-        'Label11
+        'LabelTotalPagar
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(450, 214)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label11.Size = New System.Drawing.Size(162, 43)
-        Me.Label11.TabIndex = 23
-        Me.Label11.Text = "TOTAL A PAGAR"
+        Me.LabelTotalPagar.AutoSize = True
+        Me.LabelTotalPagar.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTotalPagar.Location = New System.Drawing.Point(450, 214)
+        Me.LabelTotalPagar.Name = "LabelTotalPagar"
+        Me.LabelTotalPagar.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelTotalPagar.Size = New System.Drawing.Size(162, 43)
+        Me.LabelTotalPagar.TabIndex = 23
+        Me.LabelTotalPagar.Text = "TOTAL A PAGAR"
         '
-        'Label10
+        'LabelFechaRetiro
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(6, 171)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label10.Size = New System.Drawing.Size(174, 43)
-        Me.Label10.TabIndex = 22
-        Me.Label10.Text = "FECHA DE RETIRO"
+        Me.LabelFechaRetiro.AutoSize = True
+        Me.LabelFechaRetiro.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFechaRetiro.Location = New System.Drawing.Point(6, 171)
+        Me.LabelFechaRetiro.Name = "LabelFechaRetiro"
+        Me.LabelFechaRetiro.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelFechaRetiro.Size = New System.Drawing.Size(174, 43)
+        Me.LabelFechaRetiro.TabIndex = 22
+        Me.LabelFechaRetiro.Text = "FECHA DE RETIRO"
         '
-        'Label9
+        'LabelSucursal
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(2, 214)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label9.Size = New System.Drawing.Size(177, 43)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "LUGAR DE RETIRO"
+        Me.LabelSucursal.AutoSize = True
+        Me.LabelSucursal.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelSucursal.Location = New System.Drawing.Point(2, 214)
+        Me.LabelSucursal.Name = "LabelSucursal"
+        Me.LabelSucursal.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelSucursal.Size = New System.Drawing.Size(177, 43)
+        Me.LabelSucursal.TabIndex = 21
+        Me.LabelSucursal.Text = "LUGAR DE RETIRO"
         '
-        'Label8
+        'LabelMetodoPago
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 128)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label8.Size = New System.Drawing.Size(169, 43)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "FORMA DE PAGO"
+        Me.LabelMetodoPago.AutoSize = True
+        Me.LabelMetodoPago.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelMetodoPago.Location = New System.Drawing.Point(6, 128)
+        Me.LabelMetodoPago.Name = "LabelMetodoPago"
+        Me.LabelMetodoPago.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelMetodoPago.Size = New System.Drawing.Size(169, 43)
+        Me.LabelMetodoPago.TabIndex = 20
+        Me.LabelMetodoPago.Text = "FORMA DE PAGO"
         '
-        'Label1
+        'LabelTarifa
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 85)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Padding = New System.Windows.Forms.Padding(10)
-        Me.Label1.Size = New System.Drawing.Size(163, 43)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "TARIFA ELEGIDA"
+        Me.LabelTarifa.AutoSize = True
+        Me.LabelTarifa.Font = New System.Drawing.Font("Candara", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTarifa.Location = New System.Drawing.Point(6, 85)
+        Me.LabelTarifa.Name = "LabelTarifa"
+        Me.LabelTarifa.Padding = New System.Windows.Forms.Padding(10)
+        Me.LabelTarifa.Size = New System.Drawing.Size(163, 43)
+        Me.LabelTarifa.TabIndex = 19
+        Me.LabelTarifa.Text = "TARIFA ELEGIDA"
         '
         'BotonCancelar
         '
@@ -522,7 +529,7 @@ Partial Class Form6
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Label12 As Label
+    Friend WithEvents LabelModelo As Label
     Friend WithEvents GrupoReservacion As GroupBox
     Friend WithEvents TextoNombre As TextBox
     Friend WithEvents TextoEdad As TextBox
@@ -548,14 +555,14 @@ Partial Class Form6
     Friend WithEvents TextoMetodoPago As TextBox
     Friend WithEvents TextoTarifaElegida As TextBox
     Friend WithEvents TextoModelo As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents LabelTiempoRentar As Label
+    Friend WithEvents LabelCosto As Label
+    Friend WithEvents LabelItbms As Label
+    Friend WithEvents LabelTotalPagar As Label
+    Friend WithEvents LabelFechaRetiro As Label
+    Friend WithEvents LabelSucursal As Label
+    Friend WithEvents LabelMetodoPago As Label
+    Friend WithEvents LabelTarifa As Label
     Friend WithEvents LabelTelefono As Label
     Friend WithEvents TextoTelefono As TextBox
     Friend WithEvents BotonCancelar As Button
